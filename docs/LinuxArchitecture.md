@@ -1,6 +1,3 @@
-layout: page
-title: Linux Architecture
-
 # Linux Architecture
 
 ISO/IEE defines architecture as
