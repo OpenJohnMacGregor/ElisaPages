@@ -33,6 +33,17 @@ plugins:
   - jekyll-feed
   - jekyll-toc
 
+toc:
+	min_level: 1
+	max_level: 2
+	ordered_list: false
+	no_toc_section_class: no_toc_section
+	list_id: toc
+	list_class: section-nav
+	sublist_class: ''
+	item_class: toc-entry
+	item-prefix: toc-
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

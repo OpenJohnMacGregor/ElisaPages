@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Linux System Architecture"
+toc: true
 ---
 # Linux Architecture
 
@@ -16,7 +17,7 @@ ISO/IEE defines architecture as
 </dl>
 
 In other words, a system exhibits its fundamental characteristics
-in its elements, their relationships to each other and to the 
+through its elements, their relationships to each other and to the 
 system's envronment as well as characteristics of its design and evolution
 that define its architecture.
 
