@@ -2,7 +2,17 @@
 ---
 
 @import "{{site.theme}}";
+header	{
+		background-color: darkBlue;
+		margin-left: 150 px;
+		width: 800px;
+}
 #banner	{
+		background-color: darkBlue;
+		margin-left: 150 px;
+		width: 800px;
+}
+nav		{
 		background-color: orange;
 }
 section	{
