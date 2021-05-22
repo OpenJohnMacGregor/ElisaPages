@@ -9,7 +9,7 @@ ISO/IEE defines architecture as
 
 <dl>
 	<dt>Architecture</dt>
-	<dd style="font-style: italic">
+	<dd>
 	(system) fundamental concepts or properties of a system
 	in its environment embodied in its elements, relationships,
 	and in the principles of its design and evolution.
