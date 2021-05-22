@@ -21,7 +21,7 @@
         <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
       </header>
 
-      <div id="banner" style="background-color: orange">
+      <div id="banner">
         <span id="logo"></span>
 
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
@@ -38,9 +38,9 @@
 
     <div class="wrapper">
       <nav>
-        {{ content | toc_only }}
+        {{ toc }}
       </nav>
-      <section style="background-color: orange">
+      <section>
         {{ content | inject_anchors }}
 
       </section>
