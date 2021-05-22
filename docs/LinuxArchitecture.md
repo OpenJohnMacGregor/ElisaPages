@@ -40,22 +40,24 @@ Linux has a number of attributes that classify it as a particular type of operat
 They may dictate certain structure considerations,
 but are arguably not fundamental elements of Linux' architecture.
 
-<dt>monolithic</dt>
-	<dd>
-	As opposed to microkernel
-	</dd>
-<dt>multi-user, multi-tasking</dt>
-	<dd>
-	As opposed to an RTOS that only has user and kernel space
-	</dd>
-<dt>symmetric multiprocessing</dt>
-	<dd>
-	As opposed to asymmetric multiprocessing
-	</dd>
-<dt>virtual memory</dt>
-	<dd>
-	Presupposes an MMU.
-	</dd>
+<dl>
+	<dt>monolithic</dt>
+		<dd>
+		As opposed to microkernel
+		</dd>
+	<dt>multi-user, multi-tasking</dt>
+		<dd>
+		As opposed to an RTOS that only has user and kernel space
+		</dd>
+	<dt>symmetric multiprocessing</dt>
+		<dd>
+		As opposed to asymmetric multiprocessing
+		</dd>
+	<dt>virtual memory</dt>
+		<dd>
+		Presupposes an MMU.
+		</dd>
+</dl>
 
 ## Elements and Relationships
 
@@ -63,7 +65,7 @@ The illustration below presents a functional view on Linux' architecture.
 According to the ISO/IEEE description, this would be a classic
 software architecture, focusing on the fundamental elements and their relationships.
 
-<img src="/assets/graphics/LinuxArchitecture.png" width=800px>
+<img src="assets/graphics/LinuxArchitecture.png" width=800px>
 
 All in all, this representation of Linux hardly differentiates it from a generic
 operating system.
