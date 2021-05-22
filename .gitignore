@@ -6,4 +6,5 @@ vendor
 *.out
 *.odg
 *.html
+*.lock
 go
