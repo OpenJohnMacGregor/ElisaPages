@@ -34,21 +34,21 @@ plugins:
   - jekyll-toc
 
 toc:
-	min_level: 1
-	max_level: 2
-	ordered_list: false
-	no_toc_section_class: no_toc_section
-	list_id: toc
-	list_class: section-nav
-	sublist_class: ''
-	item_class: toc-entry
-	item-prefix: toc-
+    min_level: 1
+    max_level: 2
+    ordered_list: false
+    no_toc_section_class: no_toc_section
+    list_id: toc
+    list_class: section-nav
+    sublist_class: ''
+    item_class: toc-entry
+    item-prefix: toc-
 
 defaults:
-	- scope:
-		path: ""
-	  values:
-	  	toc: true
+    - scope:
+        path: ""
+      values:
+      toc: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
