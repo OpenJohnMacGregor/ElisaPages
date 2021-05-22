@@ -46,12 +46,15 @@ toc:
     item_class: toc-entry
     item-prefix: toc-
 
+---
 defaults:
-    - scope:
+    - 
+      scope:
         path: ""
       values:
         toc: true
-		title: "ELISA Pages"
+        title: "ELISA Pages"
+---
 
 # Exclude from processing.
 # The following items will not be processed, by default.
