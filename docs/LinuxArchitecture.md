@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "ELISA Pages"
 description: "Discussions related to the Linux Foundation ELISA Project
 toc: true
 ---
