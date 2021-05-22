@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Linux System Architecture"
+title: "ELISA Pages"
+description: "Discussions related to the Linux Foundation ELISA Project
 toc: true
 ---
 # Linux Architecture
