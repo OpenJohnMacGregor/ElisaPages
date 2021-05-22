@@ -38,10 +38,10 @@
 
     <div class="wrapper">
       <nav>
-        {% toc %}
+        {{ content | toc_only }}
       </nav>
       <section>
-        {{ content }}
+        {{ content | inject_anchors }}
 
       </section>
       <footer>
