@@ -1,3 +1,3 @@
-# Linux Ontology
+# John's ELISA Pages
 
-This is a temporary site to store discussion documents for the ELISA Ontology task force.
+This is a private site to store discussion documents,  mostly for the ELISA Ontology task force.

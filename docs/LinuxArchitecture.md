@@ -9,7 +9,7 @@ ISO/IEE defines architecture as
 	in its environment embodied in its elements, relationships,
 	and in the principles of its design and evolution.
 	</dd>
-<dl>
+</dl>
 
 In other words, a system exhibits its fundamental characteristics
 in its elements, their relationships to each other and to the 
@@ -63,7 +63,7 @@ The illustration below presents a functional view on Linux' architecture.
 According to the ISO/IEEE description, this would be a classic
 software architecture, focusing on the fundamental elements and their relationships.
 
-<img src="LinuxArchitecture.png" width=800px>
+<img src="graphics/LinuxArchitecture.png" width=800px>
 
 All in all, this representation of Linux hardly differentiates it from a generic
 operating system.
@@ -130,7 +130,7 @@ from its form.
 		It allocates pages of physical memory to applications on demand.
 		The memory manager is not limited by the size of physical memory as it can store and
 		retrieve pages on the file system when all of the physical memory is allocated.
-
+		<br>
 		Memory management also manages NUMA memory which is used for DMA access for the hardware.
 		</dd>
 	<dt>File System</dt>
@@ -150,8 +150,7 @@ from its form.
 	<dt>Timers</dt>
 		<dd>
 		Timers provides timing facilities to be used by the applications.
-		<dd>
-	</dd>
+		</dd>
 </dl>
 
 ## Principles of Design and Evolution
@@ -190,7 +189,7 @@ and could be considered architecture characterising elements or architectural fe
 		One example of an architectural construct accounting for platform variability is the virtual file interface.
 		Another example is the fop descriptor in ioctl, which is probably more a design decision to cope with variability.
 		Other examples may pop up.
-		</dt>
+		</dd>
 	<dt>Demand paging, copy on write</dt>
 		<dd>
 		Is this a design decision?
@@ -206,17 +205,17 @@ and could be considered architecture characterising elements or architectural fe
 		such as file systems, memory, etc.
 		<br>
 		There are the following namespace systems in Linux:
-		<ul>
-			<li>control groups (cgroups)</li>
-			<li>capabilities</li>
-			<li>user ids</li>
-			<li>process ids</li>
-			<li>mount points</li>
-			<li>interprocess communication</li>
-			<li>network (IP addresses, routing tables, socket listing, connection tracking table, firewall, etc.)</li>
-			<li>UTS (Host, Domain names) (UTS = Unitx Timesharing System)</li>
-		</ul>
-
+			<ul>
+				<li>control groups (cgroups)</li>
+				<li>capabilities</li>
+				<li>user ids</li>
+				<li>process ids</li>
+				<li>mount points</li>
+				<li>interprocess communication</li>
+				<li>network (IP addresses, routing tables, socket listing, connection tracking table, firewall, etc.)</li>
+				<li>UTS (Host, Domain names) (UTS = Unitx Timesharing System)</li>
+			</ul>
+		</dd>
 </dl>
 
 # References
