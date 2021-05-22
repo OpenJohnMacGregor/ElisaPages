@@ -5,4 +5,5 @@ _site
 vendor
 *.out
 *.odg
+*.html
 go
