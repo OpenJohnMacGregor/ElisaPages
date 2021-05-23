@@ -1,9 +1,9 @@
 ---
-layout: page
-description: "Discussions related to the Linux Foundation ELISA Project
-toc: true
+layout: default
+title: ELISA Pages
+description: Discussions related to the Linux Foundation ELISA Project
 ---
-# Linux Architecture
+# Architectures
 
 ISO/IEE defines architecture as
 
@@ -18,8 +18,8 @@ ISO/IEE defines architecture as
 
 In other words, a system exhibits its fundamental characteristics
 through its elements, their relationships to each other and to the 
-system's envronment as well as characteristics of its design and evolution
-that define its architecture.
+system's envronment as well as through the characteristics of its design and evolution.
+These characteristics in sum define its architecture.
 
 The ISO/IEEE definition differentiates between architecture, architecture description
 and design,
@@ -27,7 +27,7 @@ saying that architecture is either an abstract conception of the system
 or an abstract perceception of the system.
 Architecture is focused on the interactions between the system and its environment
 whereas design is more focused inwardly.
-The difference between architecture and architecture description is more difficult
+The difference between architecture and architecture description is more difficult to determine
 as the architecture description focuses on the artifacts used to express and document
 architectures whereas architecture remains abstract.
 
@@ -39,7 +39,7 @@ This may not be entirely abstract.
 The following sections explore Linux' fundamental elements, relationships and design
 considerations.
 
-## Linux is an Operating System
+# Linux as Operating System
 
 Linux has a number of attributes that classify it as a particular type of operating system.
 They may dictate certain structure considerations,
@@ -64,7 +64,7 @@ but are arguably not fundamental elements of Linux' architecture.
 		</dd>
 </dl>
 
-## Elements and Relationships
+# Elements and Relationships
 
 The illustration below presents a functional view on Linux' architecture.
 According to the ISO/IEEE description, this would be a classic
@@ -72,13 +72,13 @@ software architecture, focusing on the fundamental elements and their relationsh
 
 <img src="assets/graphics/LinuxArchitecture.png" width=800px>
 
-All in all, this representation of Linux hardly differentiates it from a generic
+All in all, in this representation Linux hardly differs from a generic
 operating system.
 Perhaps this is intuitive as operating system is a generic term and
 a particular architecture is something that despite its genericity can be recognised
 from its form.
 
-### Environment
+## Environment
 
 <dl>
 	<dt>User Applications</dt>
@@ -103,7 +103,7 @@ from its form.
 		</dd>
 </dl>
 
-### Elements
+## Elements
 
 <dl>
 	<dt>System Call Interface</dt>
@@ -160,7 +160,7 @@ from its form.
 		</dd>
 </dl>
 
-## Principles of Design and Evolution
+# Principles of Design and Evolution
 
 The illustration above is a purely functional view.
 On the one side, Linux is an instance of a generic Unix design and has inherited or adopted 

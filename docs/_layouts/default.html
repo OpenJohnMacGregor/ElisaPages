@@ -35,13 +35,18 @@
         {% endif %}
       </div><!-- end banner -->
       </header>
-
     <div class="wrapper">
       <nav>
-        {{ toc }}
+        <div class="home">
+			<a href="/">> Home</a><br>
+			<a href="LinuxArchitecture.html" class="hrefLevel2">> Linux Architecture</a><br>
+			<a href="WhitePaper.html" class="hrefLevel2">> White Paper</a>
+		</div>
+		<p style="margin-top: 20px; font-size: large; font-weight: bold;">This Page:</p>
+		<ul style="list-style-type: none"></ul>
       </nav>
       <section>
-        {{ content | inject_anchors }}
+        {{ content }}
 
       </section>
       <footer>
