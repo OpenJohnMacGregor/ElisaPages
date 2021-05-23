@@ -1,3 +1,7 @@
+body	{
+		margin: 0;
+		padding: 0;
+}
 header	{
 		background-color: darkSlateBlue;
 		color: white;
@@ -15,8 +19,8 @@ nav		{
 		position: fixed;
 		top: 0px;
 		left: 0px;
-		width:	250px;
-		padding: 0px 5px;
+		width:	230px;
+		padding-left: 5px;
 }
 section, footer {
 		margin-left: 250px;
@@ -46,6 +50,7 @@ dd ul {
 }
 .home a {
 		color: white;
+		text-decoration: none;
 }
 .comment {
 		right: 0px;
@@ -66,12 +71,10 @@ dd ul {
 		margin-top: 10px;
 }
 .tag-h2 {
-	margin-top: 10 px;
 	font-size: 90%;
 	margin-left: 15px;
 }
 tag-h3 {
-	margin-top: 10 px;
 	font-size: 90%;
 	margin-left: 30px;
 }
