@@ -7,4 +7,5 @@ vendor
 *.odg
 *.html
 *.lock
+*.bak
 go

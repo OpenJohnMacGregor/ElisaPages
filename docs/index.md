@@ -14,7 +14,7 @@ I created a definition of Linux' architecture to provide a basis for discussions
 Ultimately, it could be useful throughout the project.
 The Ontology WG should then adopt and maintain it.
 
-**Link: ** [Linux Architecture](LinuxArchitecture.html)
+**Link:** [Linux Architecture](LinuxArchitecture.html)
 
 ### White Paper
 
@@ -26,4 +26,4 @@ I made a proposal to the TSC and the Ambassadors WG to start an ELISA onboarding
 which ultimately resulted in a [presentation at the 7th Workshop](https://drive.google.com/drive/folders/1vboV7gR2yHJELlaXoIPf6HMaBrke94WQ).
 In anticipation of the Onboarding Website, I translated the White Paper document to markdown to provide a basis for discussion.
 
-**Link: ** [Original ELISA White Paper](WhitePaper.html)
+**Link:** [Original ELISA White Paper](WhitePaper.html)
