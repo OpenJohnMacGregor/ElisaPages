@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Elisa Pages
+title: ELISA Pages
 description: Discussions related to the Linux Foundation ELISA Project
 ---
 # An Introduction to ELISA
