@@ -63,12 +63,15 @@ dd ul {
 		font-style: italic;
 }
 .tag-h1 {
+		margin-top: 10px;
 }
 .tag-h2 {
+	margin-top: 10 px;
 	font-size: 90%;
 	margin-left: 15px;
 }
 tag-h3 {
+	margin-top: 10 px;
 	font-size: 90%;
 	margin-left: 30px;
 }
