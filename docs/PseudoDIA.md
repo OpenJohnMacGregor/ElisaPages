@@ -9,7 +9,7 @@ description: Discussion papers related to the Linux Foundation ELISA Project
 > the entities that use the Linux kernel plays a central role in 
 > defining how the Linux development process conforms to ISO 26262.
 > Lukas Bulwahn made a proposal to frame the relationship in terms 
-> of a Development Interface Agreement (DIA), a construct the standard
+> of a Development Interface Agreement <DIA), a construct the standard
 > uses to allow the description of the relationship between an 
 > organisation that develops elements and it suppliers.
 > He termed it a "Pseudo-DIA"
@@ -337,32 +337,32 @@ So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all
 
 ### E-Mail Thread
 
-1. (https://lists.elisa.tech/g/development-process/message/200)
-1. (https://lists.elisa.tech/g/development-process/message/214)
-1. (https://lists.elisa.tech/g/development-process/message/216)
-1. (https://lists.elisa.tech/g/development-process/message/217)
-1. (https://lists.elisa.tech/g/development-process/message/218)
-1. (https://lists.elisa.tech/g/development-process/message/222)
-1. (https://lists.elisa.tech/g/development-process/message/223)
-1. (https://lists.elisa.tech/g/development-process/message/225)
-1. (https://lists.elisa.tech/g/development-process/message/226)
-1. (https://lists.elisa.tech/g/development-process/message/227)
-1. (https://lists.elisa.tech/g/development-process/message/228)
-1. (https://lists.elisa.tech/g/development-process/message/229)
-1. (https://lists.elisa.tech/g/development-process/message/230)
-1. (https://lists.elisa.tech/g/development-process/message/234)
-1. (https://lists.elisa.tech/g/development-process/message/239)
-1. (https://lists.elisa.tech/g/development-process/message/243)
-1. (https://lists.elisa.tech/g/development-process/message/245)
-1. (https://lists.elisa.tech/g/development-process/message/246)
-1. (https://lists.elisa.tech/g/development-process/message/247)
-1. (https://lists.elisa.tech/g/development-process/message/248)
-1. (https://lists.elisa.tech/g/development-process/message/250)
-1. (https://lists.elisa.tech/g/development-process/message/252)
-1. (https://lists.elisa.tech/g/development-process/message/253)
-1. (https://lists.elisa.tech/g/development-process/message/256)
-1. ( https://lists.elisa.tech/g/development-process/message/260)
-1. (https://lists.elisa.tech/g/development-process/message/267)
-1. (https://lists.elisa.tech/g/development-process/message/269)
-1. (https://lists.elisa.tech/g/development-process/message/340)
-1. (https://lists.elisa.tech/g/development-process/message/592)
+1. <https://lists.elisa.tech/g/development-process/message/200>
+1. <https://lists.elisa.tech/g/development-process/message/214>
+1. <https://lists.elisa.tech/g/development-process/message/216>
+1. <https://lists.elisa.tech/g/development-process/message/217>
+1. <https://lists.elisa.tech/g/development-process/message/218>
+1. <https://lists.elisa.tech/g/development-process/message/222>
+1. <https://lists.elisa.tech/g/development-process/message/223>
+1. <https://lists.elisa.tech/g/development-process/message/225>
+1. <https://lists.elisa.tech/g/development-process/message/226>
+1. <https://lists.elisa.tech/g/development-process/message/227>
+1. <https://lists.elisa.tech/g/development-process/message/228>
+1. <https://lists.elisa.tech/g/development-process/message/229>
+1. <https://lists.elisa.tech/g/development-process/message/230>
+1. <https://lists.elisa.tech/g/development-process/message/234>
+1. <https://lists.elisa.tech/g/development-process/message/239>
+1. <https://lists.elisa.tech/g/development-process/message/243>
+1. <https://lists.elisa.tech/g/development-process/message/245>
+1. <https://lists.elisa.tech/g/development-process/message/246>
+1. <https://lists.elisa.tech/g/development-process/message/247>
+1. <https://lists.elisa.tech/g/development-process/message/248>
+1. <https://lists.elisa.tech/g/development-process/message/250>
+1. <https://lists.elisa.tech/g/development-process/message/252>
+1. <https://lists.elisa.tech/g/development-process/message/253>
+1. <https://lists.elisa.tech/g/development-process/message/256>
+1. <https://lists.elisa.tech/g/development-process/message/260>
+1. <https://lists.elisa.tech/g/development-process/message/267>
+1. <https://lists.elisa.tech/g/development-process/message/269>
+1. <https://lists.elisa.tech/g/development-process/message/340>
+1. <https://lists.elisa.tech/g/development-process/message/592>
