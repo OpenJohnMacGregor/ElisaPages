@@ -2,6 +2,19 @@ body	{
 		margin: 0;
 		padding: 0;
 }
+blockquote {
+		font-style: italic;
+}
+dt		{
+		color: green;
+}
+dd {
+		font-style: italic;
+		margin-left: 25px;
+}
+dd ul {
+		margin-left: 30px;
+}
 header	{
 		background-color: darkSlateBlue;
 		color: white;
@@ -29,15 +42,11 @@ section, footer {
 footer	{
 		margin-top: 20px;
 }
-dt		{
-		color: green;
-}
-dd {
-		font-style: italic;
-		margin-left: 25px;
-}
-dd ul {
-		margin-left: 30px;
+.svnImg	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
 }
 .hrefLevel2 {
 		margin-left: 10px;

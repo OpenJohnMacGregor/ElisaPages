@@ -1,16 +1,16 @@
 ---
 layout: default
 title: ELISA Pages
-description: Discussions related to the Linux Foundation ELISA Project
+description: Discussion papers related to the Linux Foundation ELISA Project
 ---
 # An Introduction to ELISA
 
-> *This paper introduces the ELISA project and identifies central challenges
+> This paper introduces the ELISA project and identifies central challenges
 > that any safety-critical project using Linux needs to overcome.
 > It presents our analysis of the challenges,
 > outlines long and short term plans on how to overcome them in the framework of the ELISA group and finally,
 > presents a collection of open building blocks that will emerge from those activities
-> for reuse in safety-critical development projects using Linux.*
+> for reuse in safety-critical development projects using Linux.
 
 ## The Problem at Hand and Normative Considerations
 
