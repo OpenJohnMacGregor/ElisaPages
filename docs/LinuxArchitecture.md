@@ -24,20 +24,20 @@ ISO/IEE defines architecture as
 
 In other words, a system exhibits its fundamental characteristics
 through its elements, their relationships to each other and to the 
-system's envronment as well as through the characteristics of its design and evolution.
+system's environment as well as through the characteristics of its design and evolution.
 These characteristics in sum define its architecture.
 
 The ISO/IEEE definition differentiates between architecture, architecture description
 and design,
 saying that architecture is either an abstract conception of the system
-or an abstract perceception of the system.
+or an abstract perception of the system.
 Architecture is focused on the interactions between the system and its environment
 whereas design is more focused inwardly.
 The difference between architecture and architecture description is more difficult to determine
 as the architecture description focuses on the artifacts used to express and document
 architectures whereas architecture remains abstract.
 
-For the purpose of this document, the elements expressed in the architecture respresent
+For the purpose of this document, the elements expressed in the architecture represent
 functionalities the operating system's environment can use to interact with it in order
 to fulfil Linux' role as an operating system.
 This may not be entirely abstract.
@@ -89,7 +89,7 @@ software architecture, focusing on the fundamental elements and their relationsh
 All in all, in this representation Linux hardly differs from that of a generic
 operating system.
 Perhaps this is intuitive as operating system is a generic term and
-a the essence of an architecture is that it issomething which,
+a the essence of an architecture is that it is something which,
 despite its genericity, can be recognised from its form.
 
 ## Environment
@@ -98,7 +98,7 @@ despite its genericity, can be recognised from its form.
 	<dt>User Applications</dt>
 		<dd>
 		User Applications are, by nature, in user space.
-		In addition to having additional protection when execptions occur,
+		In addition to having additional protection when exceptions occur,
 		each application has an identity associated with it that allows Linux'
 		access control and resource control functions to manage access to and
 		competition for the operating system resources.
@@ -167,7 +167,7 @@ as well as providing support services for the execution of computer programmes.
 		</dd>
 	<dt>Device I/O</dt>
 		<dd>
-		Devices I/O tranmits commands to and receives responses from peripherals installed on the system 
+		Devices I/O transmits commands to and receives responses from peripherals installed on the system 
 		as well as storing and retrieving data from those peripherals.
 		</dd>
 	<dt>Network I/O</dt>
@@ -240,15 +240,15 @@ and could be considered architecture characterising elements or architectural fe
 				<li>mount points</li>
 				<li>interprocess communication</li>
 				<li>network (IP addresses, routing tables, socket listing, connection tracking table, firewall, etc.)</li>
-				<li>UTS (Host, Domain names) (UTS = Unitx Timesharing System)</li>
+				<li>UTS (Host, Domain names) (UTS = Unix Timesharing System)</li>
 			</ul>
 		</dd>
 </dl>
 
 # References
 
-1. [ISO/IEE Definition of Archtecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html)
+1. [ISO/IEE Definition of Architecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html)
 2. [ISO/IEE Conceptual Model of Architecture Description](http://www.iso-architecture.org/ieee-1471/cm/)
 1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/)
 1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-1. [Wikipedia: Linux Kernel Intefaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces)
+1. [Wikipedia: Linux Kernel Interfaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces)
