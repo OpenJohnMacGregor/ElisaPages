@@ -139,7 +139,7 @@ as well as providing support services for the execution of computer programmes.
 	<dt>Resource Control</dt>
 		<dd>
 		Resource control arbitrates between applications competing for the use of system resources.
-		It can deny, delay or limit applications' use of system resources based again the identity 
+		It can deny, delay or limit applications' use of system resources based again on the identity 
 		the application has supplied.
 		In overload situations, resource control can revoke or limit applications's use of the resources
 		to alleviate the overload.
