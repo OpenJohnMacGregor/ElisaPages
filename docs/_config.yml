@@ -29,11 +29,10 @@ markdown: kramdown
 # github_username:  jekyll
 
 # Build settings
-# theme: minima
+theme: minima
 # theme: jekyll-theme-leap-day
 # theme: jekyll-theme-cayman
 plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.

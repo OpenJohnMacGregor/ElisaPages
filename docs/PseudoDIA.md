@@ -203,11 +203,11 @@ The uninitiated (like me) might like to read 26262-8 5.3 - 5.5 and 26262-8 Appen
 
  
 
-[1] https://automotive.wiki/index.php/Development_Interface_Agreement
+[1] <https://automotive.wiki/index.php/Development_Interface_Agreement>
 
-[2]  https://link.springer.com/content/pdf/10.1007%2F978-3-658-26107-8_18.pdf
+[2]  <https://link.springer.com/content/pdf/10.1007%2F978-3-658-26107-8_18.pdf>
 
-[3] http://www.specialoperationssummit.com/media/8516/14781.pdf
+[3] <http://www.specialoperationssummit.com/media/8516/14781.pdf>
 
 ---
 
@@ -307,7 +307,7 @@ For this e-mail, I've enhanced the safety-critical lifecycle diagramme with 3 co
 
 In the next e-mail, I'll discuss the implications of this perspective on the work in the group and ELISA's position in the community.
 
-[1] https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing 
+[1] <https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing>
 
 # Veil 5: Discussion and Conclusions
 

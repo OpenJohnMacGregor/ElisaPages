@@ -11,7 +11,7 @@ description: Discussion papers related to the Linux Foundation ELISA Project
 
 # Architectures
 
-ISO/IEE defines architecture as
+[ISO/IEE][IEE_arch] defines architecture as
 
 <dl>
 	<dt>Architecture</dt>
@@ -247,7 +247,8 @@ and could be considered architecture characterising elements or architectural fe
 
 # References
 
-1. [ISO/IEE Definition of Architecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html)
+1. [ISO/IEE Definition of Architecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture")
+	[IEE_arch]: http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture"
 2. [ISO/IEE Conceptual Model of Architecture Description](http://www.iso-architecture.org/ieee-1471/cm/)
 1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/)
 1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
