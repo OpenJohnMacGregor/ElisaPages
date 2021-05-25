@@ -6,7 +6,7 @@ description: Discussion papers related to the Linux Foundation ELISA Project
 # Architecture of the Linux Operating System
 
 > This paper defines the architecture of the Linux operating system to aid
-> the analysis of its safety integrity and to make inferences about the
+> the analysis of its safety integrity and ultimately to make inferences about the
 > methods and techniques used in its construction.
 
 # Architectures
@@ -42,6 +42,13 @@ functionalities the operating system's environment can use to interact with it i
 to fulfil Linux' role as an operating system.
 This may not be entirely abstract.
 
+As a practical matter however, the architectural view may be the view of the system used in the conceptual
+phase of the system development process to document requirements on the system.
+In that phase, the properties and behaviour of the system are viewed without
+particular regard for its implementation.
+Note, however, that even at this stage, the specific details of its environment and the 
+implementation of the environments elements (the hardware, for example) may be set.
+
 The following sections explore Linux' fundamental elements, relationships and design
 considerations.
 
@@ -59,6 +66,7 @@ but are arguably not fundamental elements of Linux' architecture.
 	<dt>multi-user, multi-tasking</dt>
 		<dd>
 		As opposed to an RTOS that only has user and kernel space
+		and single-tasking operating systems.
 		</dd>
 	<dt>symmetric multiprocessing</dt>
 		<dd>
@@ -78,11 +86,11 @@ software architecture, focusing on the fundamental elements and their relationsh
 
 <img src="assets/graphics/LinuxArchitecture.png" width=800px>
 
-All in all, in this representation Linux hardly differs from a generic
+All in all, in this representation Linux hardly differs from that of a generic
 operating system.
 Perhaps this is intuitive as operating system is a generic term and
-a particular architecture is something that despite its genericity can be recognised
-from its form.
+a the essence of an architecture is that it issomething which,
+despite its genericity, can be recognised from its form.
 
 ## Environment
 
@@ -101,13 +109,19 @@ from its form.
 		It sometimes passes system calls directly through to the operating system.
 		Otherwise it may aggregate groups of system calls into a higher functionality
 		or provide functionality, like math functions, that does not depend on the operating system.
-		It too, operates in user space, and inherits the
+		It too, operates in user space.
 		</dd>
 	<dt>Hardware</dt>
 		<dd>
 		The operating system is controls and is adapted for the hardware platform on which it operates.
 		</dd>
 </dl>
+
+## Functional Description
+
+Linux offers access to the system's hardware peripherals and to process and memory resources to support programme execution.
+It provides facilities to control access to those resources and manage them
+as well as providing support services for the execution of computer programmes.
 
 ## Elements
 
@@ -184,7 +198,7 @@ and could be considered architecture characterising elements or architectural fe
 		</dd>
 	<dt>File System Hierarchy</dt>
 		<dd>
-		see <i>references section</i></>
+		see *references section*
 		</dd>
 	<dt>The Virtual File Interface</dt>
 		<dd>
