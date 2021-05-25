@@ -11,7 +11,7 @@ description: Discussion papers related to the Linux Foundation ELISA Project
 
 # Architectures
 
-[ISO/IEE][IEE_arch] defines architecture as
+[ISO/IEE][iee arch] defines architecture as
 
 <dl>
 	<dt>Architecture</dt>
@@ -27,7 +27,7 @@ through its elements, their relationships to each other and to the
 system's environment as well as through the characteristics of its design and evolution.
 These characteristics in sum define its architecture.
 
-The ISO/IEEE definition differentiates between architecture, architecture description
+The [ISO/IEE][iee arch] definition differentiates between architecture, architecture description
 and design,
 saying that architecture is either an abstract conception of the system
 or an abstract perception of the system.
@@ -198,7 +198,8 @@ and could be considered architecture characterising elements or architectural fe
 		</dd>
 	<dt>File System Hierarchy</dt>
 		<dd>
-		see *references section*
+		see  <a href="https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard"
+		title="Wikipedia: File System Hierarchy Standard">the File System Hierarchy Standard</a>
 		</dd>
 	<dt>The Virtual File Interface</dt>
 		<dd>
@@ -232,24 +233,25 @@ and could be considered architecture characterising elements or architectural fe
 		such as file systems, memory, etc.
 		<br>
 		There are the following namespace systems in Linux:
-			<ul>
-				<li>control groups (cgroups)</li>
-				<li>capabilities</li>
-				<li>user ids</li>
-				<li>process ids</li>
-				<li>mount points</li>
-				<li>interprocess communication</li>
-				<li>network (IP addresses, routing tables, socket listing, connection tracking table, firewall, etc.)</li>
-				<li>UTS (Host, Domain names) (UTS = Unix Timesharing System)</li>
-			</ul>
+		<ul>
+			<li>control groups (cgroups)</li>
+			<li>capabilities</li>
+			<li>user ids</li>
+			<li>process ids</li>
+			<li>mount points</li>
+			<li>interprocess communication</li>
+			<li>network (IP addresses, routing tables, socket listing, connection tracking table, firewall, etc.)</li>
+			<li>UTS (Host, Domain names) (UTS = Unix Timesharing System)</li>
+		</ul>
 		</dd>
 </dl>
 
 # References
 
 1. [ISO/IEE Definition of Architecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture")
-	[IEE_arch]: http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture"
-2. [ISO/IEE Conceptual Model of Architecture Description](http://www.iso-architecture.org/ieee-1471/cm/)
-1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/)
-1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-1. [Wikipedia: Linux Kernel Interfaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces)
+2. [ISO/IEE Conceptual Model of Architecture Description](http://www.iso-architecture.org/ieee-1471/cm/ "ISO/IEE Conceptual Model of Architecture Description")
+1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/"IBM: Anatomy of the Linux Kernel")
+1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard "Wikipedia: File System Hierarchy Standard")
+1. [Wikipedia: Linux Kernel Interfaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces "Wikipedia: Linux Kernel Interfaces")
+
+[iee arch]: http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture"
