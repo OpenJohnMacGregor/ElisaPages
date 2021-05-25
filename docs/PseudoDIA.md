@@ -217,7 +217,7 @@ We're talking about an Operating System here - and systems developers would neve
 
 I dug out an old illustration of a bog-standard V-model for embedded systems(enclosed).  It could have been from a textbook i.e. [1]  but it's mostly compatible with the processes envisaged by safety standards. I added the operating system aspects.  I'm neglecting the hardware development process here as well.
 
-<img src="assets/graphics/BogStandardVModel.svg" alt="Bog-Standard V-Model" class="svnImg">
+<img src="assets/graphics/BogStandardVModel.svg" alt="Bog-Standard V-Model" class="svgImg">
 
 According to the textbook definition, the operating system-related part of the development process starts at the software architecture phase.  The system developer may initially have a set of operating system alternatives to choose from, say an RTOS or Linux or even BSD for all I know.  The basic application functionality and its (logical) requirements on the OS are defined in the architecture phase.  As processing aspects are considered, specific interfaces to the OS are identified at the technical design stage.  Probably at this stage at the latest, the alternatives have been narrowed down to one operating system.  Extraneous OS functionality, such as communication stacks or file systems can be eliminated and options can be chosen which defines a specific OS configuration.  Code may have to be developed to bring the OS up at run-time. 
 
@@ -237,7 +237,7 @@ Again, this holds for all systems, safety-critical or not.  I'll consider safety
 
 For this e-mail, I've enhanced the general V-Model with safety activities / processes.  This means that the diagramme covers the general development lifecycle as well as the safety lifecycle.  The standards are not so clear about that.  Rather than having a separate, parallel V for the safety lifecycle, I've inserted orange "safety" boxes in the nodes representing each development phase.
 
-<img src="assets/graphics/VModelWithSafety.svg" alt="V-Model with Safety" class="svnImg">
+<img src="assets/graphics/VModelWithSafety.svg" alt="V-Model with Safety" class="svgImg">
 
 In the case of ISO 26262, there is the famous illustration of the 3 Vs superimposed over the overview of the standards series (Figure 1 in every standard) and Figures 2 & 3 in Part 4 which replace the hardware and software Vs with boxes.  The enclosed illustration seems generally compatible.
 
@@ -303,7 +303,7 @@ The first impression I had was that the development community just contributed t
 
 For this e-mail, I've enhanced the safety-critical lifecycle diagramme with 3 corresponding communities (enclosed).  The line of demarcation between the "pure" development community and the user-development community is somewhat arbitrary.  As a first guess,  I've put it above module design.  The upper group might be called "user community", but I think that if they were indeed a community, they band together and get involved in the development.  Per definition, that is not what I intend.
 
-<img src="assets/graphics/Communities.svg" alt="Communities" class="svnImg">
+<img src="assets/graphics/Communities.svg" alt="Communities" class="svgImg">
 
 In the next e-mail, I'll discuss the implications of this perspective on the work in the group and ELISA's position in the community.
 
@@ -324,7 +324,7 @@ It can also well be that the desired hardware / safety architecture can affect w
 
 For this e-mail, I've extracted the communities layer from the diagramme and refined the concept of user-developers.  It's conceivable that we could identify or organize a safety community that manages the safety-related issues and Linux features.  There are other user-developer communities as well: the Android community (take a look at what Google has done for the Kernel), the security community (take a look at what Google, again, DARPA? (SELinux), seccomp or grsecuity have done), the container community(Docker, lxc/lxd, etc.).  Each of these communities contribute subsystem architectures / designs to the Kernel.  The user-developer / developer split seems to make sense.  That being said, getting intermediate work products, like design documentation for integration testing might be incredibly difficult.
 
-<img src="assets/graphics/LinuxCommunities.svg" alt="Linux Communities" class="svnImg">
+<img src="assets/graphics/LinuxCommunities.svg" alt="Linux Communities" class="svgImg">
 
 The fundamental problem: the process being used has to be documented and adherence has to be demonstrated.  This is quality stuff not safety stuff.
 
