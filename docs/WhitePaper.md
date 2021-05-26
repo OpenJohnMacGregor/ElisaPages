@@ -1,10 +1,8 @@
 ---
 layout: default
-title: ELISA Pages
+title: An Introduction to ELISA
 description: Discussion papers related to the Linux Foundation ELISA Project
 ---
-# An Introduction to ELISA
-
 > This paper introduces the ELISA project and identifies central challenges
 > that any safety-critical project using Linux needs to overcome.
 > It presents our analysis of the challenges,

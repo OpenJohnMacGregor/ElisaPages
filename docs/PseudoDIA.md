@@ -1,10 +1,8 @@
 ---
 layout: default
-title: ELISA Pages
+title: "Pseudo-DIA: The Dance of the  5 Veils"
 description: Discussion papers related to the Linux Foundation ELISA Project
 ---
-# Pseudo-DIA: The Dance of the  5 Veils
-
 > The relationship between the Linux Kernel Development Community and 
 > the entities that use the Linux kernel plays a central role in 
 > defining how the Linux development process conforms to ISO 26262.
@@ -41,7 +39,8 @@ The main deliverable from the Linux Kernel Development Community is the Linux ke
 
 User: The User is an (abstract) organizational entity that develops a system, which includes one specific configuration of the pre-existing configurable software (Linux Kernel), and puts this system into the public space. The term User may incorporate multiple organizations in a supply chain up to the OEM, and it includes all phases of the system development, from system design, requirements engineering, configuring the kernel, building the kernel, HW-SW integration and to production, maintenance and decommission.
 
-The definitions above are an extract from the Glossary at https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing.
+The definitions above are an extract from the Glossary
+[Kernel Development Process WG Glossary][devWG glossary].  
 
 For a better solution based on those definitions, I came up with this basic idea:
 
@@ -76,13 +75,15 @@ This definition includes the following characteristics:
 When we consider a software delivery/release of the Linux kernel, the Linux Kernel Development Community makes the following offer to all its Users.
 Concerning the legally binding offer, the GPL License clearly states (in capital letters):
 
-NO WARRANTY
+<blockquote style="normal">
+	<p>NO WARRANTY</p>
+ 
+	<p>11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p>
 
-11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+	<p>12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+ </blockquote>
 
-12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
-(quoting Clause 11 & 12 of the GPL 2.0 License, https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[quoting Clause 11 & 12 of the GPL 2.0 License][gnu v2.0]
 
 So, in short, the Linux kernel does what it does (there is no fitness for a particular purpose), comes with no claim of quality of any kind, and all risks are in the users sole responsibility.
 
@@ -90,17 +91,22 @@ However, the Linux kernel community also offers the following interface for the 
 
 First, whenever a release candidate is published, Linus asks:
 
-"Go out and test (and special thanks to people who already did, and started sending reports even during the merge window)" (Linus Torvalds,  Linux 5.5-rc1, https://lwn.net/Articles/806771/)
-"So peeps - go build it, install it and boot it, and report back any problems you see," (Linus Torvalds, Linux 5.5-rc2, https://lwn.net/Articles/807349/)
-"but please do use the down-time to do some extra testing instead, ok?" (Linus Torvalds, Linux 5.5-rc3, https://lwn.net/Articles/808000/, shortly before Christmas break)
-"Scan the shortlog below if you are into that, but otherwise just go forth and test it out all," (Linus Torvalds, Linux 5.5-rc6, https://lwn.net/Articles/809255/)
-" Please do test, there should be nothing scary going on." (Linus Torvalds, Linux 5.5-rc7, https://lwn.net/Articles/810011/)
+"Go out and test (and special thanks to people who already did, and started sending reports even during the merge window)"
+[Linus Torvalds,  Linux 5.5-rc1][linus 5.5-rc1]  
+"So peeps - go build it, install it and boot it, and report back any problems you see," 
+[Linus Torvalds,  Linux 5.5-rc2][linus 5.5-rc2]  
+"but please do use the down-time to do some extra testing instead, ok?"
+[Linus Torvalds,  Linux 5.5-rc3][linus 5.5-rc3]  
+"Scan the shortlog below if you are into that, but otherwise just go forth and test it out all," 
+[Linus Torvalds,  Linux 5.5-rc6][linus 5.5-rc6]  
+" Please do test, there should be nothing scary going on." 
+[Linus Torvalds,  Linux 5.5-rc7][linus 5.5-rc7]   
 
 It is probably an interesting of study of English literature to create a full list of quotes where Linus asks on various ways over and over for the one thing that he requests from the Users, namely to test the provided release candidate and report any issues. Then when the User sends back a report of a bug or regression, the Linux Kernel Development Community reacts to that feedback, and clear regressions (usually) lead to fixes or removal of the complete functionality causing the regression.
 
 And with the final release, Linus asks as well:
 
-"Anyway. Go out and test 5.5" (Linus Torvalds, Linux 5.5, https://lwn.net/Articles/810579/)
+"Anyway. Go out and test 5.5" [Linus Torvalds,  Linux 5.5-final][linus 5.5-final]   
 
 But at this point, there is a consensus that the majority of the community has moved on, and the reports back on this version later are handled differently. Ultimately, it is up to the user to test during the release candidates and report back to the community, and nevertheless to test the final release on fitness for the user's purpose. For most users---although they may be unaware of it---, this agreement is sufficient to build products relying on these provided Linux kernel releases.
 
@@ -231,7 +237,7 @@ While a system developer must choose an operating system from the flavours and v
 
 Again, this holds for all systems, safety-critical or not.  I'll consider safety-critical systems in the next e-mail.
 
-[1] https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/ 
+[1] <https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/>
 
 # Veil 3: Safety for Operating Systems involves functional and quality requirements
 
@@ -288,14 +294,14 @@ What you have proposed[1] is a model and from a process perspective, "users" and
 
 From your original e-mail:
 
-    However, the Linux kernel community also offers the following interface for the suggested development procedures for any User:
-
-    a release candidate is published, Linus asks: ... "Go out and test...
+> However, the Linux kernel community also offers the following interface for the suggested
+> development procedures for any User:
+> release candidate is published, Linus asks: ... "Go out and test...
 
 Who is he addressing here? Isn't it the Linux Development Community, not a user per your definition?
 
-    the Linux Kernel Development Community reacts to that feedback, and clear regressions (usually) 
-    lead to fixes or removal of the complete functionality causing the regression.
+> the Linux Kernel Development Community reacts to that feedback, and clear regressions (usually) 
+> lead to fixes or removal of the complete functionality causing the regression.
 
 Again the Development Community is involved... and the result is source code.  But, as with patches that make it to staging, the development community generates some activity on the mailing lists that reflect design or architectural decisions.
 
@@ -307,7 +313,7 @@ For this e-mail, I've enhanced the safety-critical lifecycle diagramme with 3 co
 
 In the next e-mail, I'll discuss the implications of this perspective on the work in the group and ELISA's position in the community.
 
-[1] <https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing>
+[1] [Kernel Development Process WG Glossary][devWG glossary]
 
 # Veil 5: Discussion and Conclusions
 
@@ -334,6 +340,24 @@ So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all
 # References
 
 ### External
+
+[Kernel Development Process WG Glossary](https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing "Kernel Development Process WG Glossary")<br/>
+[GPL 2.0 License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "GPL 2.0 License")<br/>
+[Linus Torvalds,  Linux 5.5-rc1](https://lwn.net/Articles/806771/ "Linus Torvalds,  Linux 5.5-rc1")<br/>
+[Linus Torvalds,  Linux 5.5-rc2](https://lwn.net/Articles/807349/ "Linus Torvalds,  Linux 5.5-rc2")<br/>
+[Linus Torvalds,  Linux 5.5-rc3](https://lwn.net/Articles/808000/ "Linus Torvalds,  Linux 5.5-rc3")<br/>
+[Linus Torvalds,  Linux 5.5-rc6](https://lwn.net/Articles/809255/ "Linus Torvalds,  Linux 5.5-rc6")<br/>
+[Linus Torvalds,  Linux 5.5-rc7](https://lwn.net/Articles/810011/ "Linus Torvalds,  Linux 5.5-rc7")<br/>
+[Linus Torvalds,  Linux 5.5-final](https://lwn.net/Articles/810579/ "Linus Torvalds,  Linux 5.5-final")<br/>
+
+[devWG glossary]: https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing. "Kernel Development Process WG Glossary"
+[gnu v2.0]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "GPL 2.0 License"
+[linus 5.5-rc1]: https://lwn.net/Articles/806771 "Linus Torvalds,  Linux 5.5-rc1"
+[linus 5.5-rc2]: https://lwn.net/Articles/807349 "Linus Torvalds,  Linux 5.5-rc1"
+[linus 5.5-rc3]: https://lwn.net/Articles/808000 "Linus Torvalds,  Linux 5.5-rc1"
+[linus 5.5-rc6]: https://lwn.net/Articles/809255 "Linus Torvalds,  Linux 5.5-rc1"
+[linus 5.5-rc7]: https://lwn.net/Articles/810011 "Linus Torvalds,  Linux 5.5-rc1"
+[linus 5.5-final]: https://lwn.net/Articles/810579 "Linus Torvalds,  Linux 5.5-final"
 
 ### E-Mail Thread
 

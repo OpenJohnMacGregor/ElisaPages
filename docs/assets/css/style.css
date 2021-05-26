@@ -42,6 +42,10 @@ section, footer {
 footer	{
 		margin-top: 20px;
 }
+.docTitle {
+		font-style: bold;
+		text-align: center;
+}
 .svgImg	{
 		display: block;
 		margin-left: auto;

@@ -1,10 +1,8 @@
 ---
 layout: default
-title: ELISA Pages
+title: Architecture of the Linux Operating System
 description: Discussion papers related to the Linux Foundation ELISA Project
 ---
-# Architecture of the Linux Operating System
-
 > This paper defines the architecture of the Linux operating system to aid
 > the analysis of its safety integrity and ultimately to make inferences about the
 > methods and techniques used in its construction.
