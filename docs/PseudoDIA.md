@@ -49,9 +49,7 @@ For a better solution based on those definitions, I came up with this basic idea
 The motivation to describe the scope of Linux Kernel Development Community and its interface more precisely is:
 
 1. initially, for us to improve our common understanding: When we talk about considering the execution of a process step (in the standards' understanding), do we mean: do we assume to the process step is executed by the Users or by the Community? What are expectations that come with that activity?
-
 2. later, for anyone else trying to understand the basic assumptions what the user explicitly needs to do and what the user needs to check to hold (control they still hold) about what we state at a certain point in time about the development process (and which might not hold at a later point in time).
-
 3. later, to motivate stakeholders to support certain procedural changes in the Linux kernel community (or actually, community suborganizations that are relevant to the stakeholders) or to engage in the community to implement this change.
 
 ### How to describe the scope of Linux Kernel Development Community and its interface?
@@ -63,12 +61,13 @@ First, we introduce the standards' definition of a development interface agreeme
 According to ISO 26262, Edition 2, Part 1, 3.32, a Development Interface Agreement (DIA) is an "agreement between customer and supplier in which the responsibilities for activities to be performed, evidence to be reviewed, or work products (3.185) to be exchanged by each party related to the development of items (3.84) or elements (3.41) are specified."
 
 This definition includes the following characteristics:
-  a. a specification of the scope, i.e., the development of an item or element 
-  b. an agreement between two parties involved in the development of that scope
-  c. description of activities
-  d. assignment of activities to each party
-  e. acceptance of the responsibility on that activity by the assigned party
-  f. description of resulting evidences or work products that need to be created by one party and provided as input to the other party for a further activity.
+1. a specification of the scope, i.e., the development of an item or element 
+1. an agreement between two parties involved in the development of that scope
+1. description of activities
+1. assignment of activities to each party
+1. acceptance of the responsibility on that activity by the assigned party
+1. description of resulting evidences or work products that need to be created by one party and provided as input to the other party for a further activity.
+{: .alphaList}
 
 ### Understanding the default agreement between the Kernel Community and its Users
 
@@ -116,12 +115,13 @@ Specific environments, such as systems under certain regulations, critical envir
 This description is often needed to estimate the risks of the kernel development process and to reduce those risks by further mitigating activities by the user.
 
 A "Pseudo-DIA" includes the following characteristics:  
-  a. a specification of the scope, i.e., the development of an item or element
-  b. a definition of two parties involved in the development of that scope
-  c. description of activities
-  d. assignment of activities to each party,
-  e. evidences that the assignment meets the actual reality of executed activities among the two parties
-  f. description of resulting evidences or work products that need to be created by one party and provided as input to the other party for a further activity.
+1. a specification of the scope, i.e., the development of an item or element
+1. a definition of two parties involved in the development of that scope
+1. description of activities
+1. assignment of activities to each party,
+1. evidences that the assignment meets the actual reality of executed activities among the two parties
+1. description of resulting evidences or work products that need to be created by one party and provided as input to the other party for a further activity.
+{: .alphaList}
 
 In other words, a "Pseudo-DIA" can describe "a specific scenario between two parties in which activities are performed, evidences are reviewed, or work products (3.185) are exchanged between two parties related to the development of items (3.84) or elements (3.41) are specified."
 
@@ -148,7 +148,6 @@ The value of such a pseudo-DIA is determined by the degree that the provided def
 The activity of creating or following a Pseudo-DIA, i.e., determining an assignment of activities/aspects to those two parties, the User can understand how the quality assurance/assessment of each specific activity could generally be used for an overall development process assessment:
 
 1. in case you assign an activity to the User, the Pseudo-DIA author's recommendation is that the User needs to execute the whole activity within its organization.
-
 2. in case you assign it to the Community, the Pseudo-DIA author's recommendation is that the User needs to observe if the Community actually executes the activity and determine if the activity is done with sufficient care and rigor for the User's interest.
 (The development-process group might provide methods and tools to allow efficient observation of Community behavior.)
 
@@ -166,28 +165,29 @@ ISO 26262, Part 2, Clause 5.4.4.1 states: The organization shall ensure that the
 
 In the further example, the aspects are defined as follows:
 
-  a. a specification of the scope, i.e., the development of an item or element:
-    The scope of this Pseudo-DIA is the Linux kernel v5.5, ultimately integrated in Linus Torvalds git repository and tagged as v5.5 by Linus Torvalds during the release process of v5.5. This definition in this example excludes the later v5.5.y versions in the linux-stable repository.
+1. A specification of the scope, i.e., the development of an item or element
+: The scope of this Pseudo-DIA is the Linux kernel v5.5, ultimately integrated in Linus Torvalds git repository and tagged as v5.5 by Linus Torvalds during the release process of v5.5. This definition in this example excludes the later v5.5.y versions in the linux-stable repository.
 
-  b. a definition of two parties involved in the development of that scope:
-    The Linux Kernel Community and the User as defined above.
+1. A definition of two parties involved in the development of that scope
+: The Linux Kernel Community and the User as defined above.
 
-  c. description of the activities:
-      Basically, we assume the Linux Kernel Development Community is responsible for design, implementation and documentation of the functionality implemented in v5.5; that the requirements fit to the use case, testing, verification and validation is to the user. Hence, for this main responsibility, the sufficient level of skills, competence and qualification is knowledge of the C dialect used for kernel development and experience and knowledge in operating system design and implementation.
+1. Description of the activities
+: Basically, we assume the Linux Kernel Development Community is responsible for design, implementation and documentation of the functionality implemented in v5.5; that the requirements fit to the use case, testing, verification and validation is to the user. Hence, for this main responsibility, the sufficient level of skills, competence and qualification is knowledge of the C dialect used for kernel development and experience and knowledge in operating system design and implementation.
 Ensuring that each person has sufficient level is split into the following activities: identification of competence for each contributor, clear documentation of the contributor's role within the development community and the contributions, determination if competence fits to contributor's role according to criticality of the functionality to the product safety.
 
-  d. assignment of activities to each party:
-    The activities above are assigned as follows:
-    Identification of competence for each contributor is assigned to the Linux Kernel Development Community.
-    Clear documentation of the contributor's role within the development community and the contributions is assigned to the Linux Kernel Development Community.
-    Determination if competence fits to contributor's role according to criticality of the functionality to the product safety is assigned to the User.
+1. Assignment of activities to each party
+: The activities above are assigned as follows:
+    - Identification of competence for each contributor is assigned to the Linux Kernel Development Community.
+    - Clear documentation of the contributor's role within the development community and the contributions is assigned to the Linux Kernel Development Community.
+    - Determination if competence fits to contributor's role according to criticality of the functionality to the product safety is assigned to the User.
 
-  e. evidences that the assignment meets the actual reality of executed activities among the two parties:
-    The contributor's competence can be judged based on the previous contributions to the Linux kernel repository and their involvement in email review. All contributions by an individual are recorded and significant contributions of suggestions and review are recorded with further tags in the commit message. Continuous unhelpful review is eventually marked by the Linux kernel community by ignorance of those contributions. The role of central developers are recorded and maintained in the MAINTAINERS file.
+1. Evidences that the assignment meets the actual reality of executed activities among the two parties
+: The contributor's competence can be judged based on the previous contributions to the Linux kernel repository and their involvement in email review. All contributions by an individual are recorded and significant contributions of suggestions and review are recorded with further tags in the commit message. Continuous unhelpful review is eventually marked by the Linux kernel community by ignorance of those contributions. The role of central developers are recorded and maintained in the MAINTAINERS file.
 The User has to check that the community continues to archive all contributions and email discussion and to maintain MAINTAINERS appropriately.
 
-  f. description of resulting evidences or work products that need to be created by one party and provided as input to the other party for a further activity.
-The Linux Kernel Development Community provides a clear list of all contributors and their contributions, i.e., git history and email archives. The User needs to check availability of all recent information of all relevant sources. The User needs to make the judgement if the contributor had sufficient competence for the relevance of the contribution and mitigate with further activities if the competence if not considered sufficient. The User is responsible for mitigations of identified shortcomings with regard to competence management for the specific product usage. Note, at the moment, the gap from a practical view could to be that the current interface between Linux Kernel Development Community and the User is a "rather raw-data interface"; the User has not yet defined an interface that might be more suitable for the product-relevant competence judgement than the currently described interface.
+1. Description of resulting evidences or work products that need to be created by one party and provided as input to the other party for a further activity.
+: The Linux Kernel Development Community provides a clear list of all contributors and their contributions, i.e., git history and email archives. The User needs to check availability of all recent information of all relevant sources. The User needs to make the judgement if the contributor had sufficient competence for the relevance of the contribution and mitigate with further activities if the competence if not considered sufficient. The User is responsible for mitigations of identified shortcomings with regard to competence management for the specific product usage. Note, at the moment, the gap from a practical view could to be that the current interface between Linux Kernel Development Community and the User is a "rather raw-data interface"; the User has not yet defined an interface that might be more suitable for the product-relevant competence judgement than the currently described interface.
+{: .alphaList}
 
 ### Afterword
 
@@ -250,17 +250,19 @@ In the case of ISO 26262, there is the famous illustration of the 3 Vs superimpo
 It's not generally included in the V-Model, but in the context of safety-critical systems, there should be backwards traceability between the requirements and the work products that implement them.
 
 Two points are immediately noticeable:
-	1) The standards' requirements mostly only cover the tip of the iceberg of system development activities.  (Well, I have to admit I made the orange boxes small so that they wouldn't interfere with the phase titles, however (-:  ).
-	2) There is an overlap between safety functionality and operating system functionality.
+1. The standards' requirements mostly only cover the tip of the iceberg of system development activities.  (Well, I have to admit I made the orange boxes small so that they wouldn't interfere with the phase titles, however (-:  ).
+1. There is an overlap between safety functionality and operating system functionality.
+{: .alphaList}
 
 Those turquoise boxes represent the development process all application, middleware and, yes, operating system elements in the safety-critical system.  The system itself is composed of (using a somewhat arbitrary mixture of terminology):
-	1) newly-developed safety  elements
-	2) newly-developed non-safety elements
-	3) pre-existing safety elements that have been used in a similar domain
-	4) pre-existing safety elements that have been used in another context (at least from the 26262 perspective), i.e. another instance of the same product class
-	5) pre-existing non-safety elements
-	6) pre-existing safety components (hardware and software)
-	7) pre-existing non-safety components (hardware and software)
+1. newly-developed safety  elements
+1. newly-developed non-safety elements
+1. pre-existing safety elements that have been used in a similar domain
+1. pre-existing safety elements that have been used in another context (at least from the 26262 perspective), i.e. another instance of the same product class
+1. pre-existing non-safety elements
+1. pre-existing safety components (hardware and software)
+1. pre-existing non-safety components (hardware and software)
+
 each of which may have a different certification or qualification route as well as different generic development processes.  The difference between elements and components seem nebulous to me and I'd rather call pre-existing things "off-the-shelf", whereby one might have to differentiate whose shelf they come from.
 
 From the previous e-mail (which admittedly considered only non-safety-critical systems), a Linux that is currently being selected for use in an embedded system would belong to category 7 and that is the focus here.  It may soon be the case that safety-critical applications will use Linux.  There may come a time, where safety functionality has been brought upstream to the Kernel, but these are now not quite the case.
@@ -305,7 +307,10 @@ Who is he addressing here? Isn't it the Linux Development Community, not a user 
 
 Again the Development Community is involved... and the result is source code.  But, as with patches that make it to staging, the development community generates some activity on the mailing lists that reflect design or architectural decisions.
 
-The first impression I had was that the development community just contributed the to the main deliverable, the source code repository.  I see a class of user-developers that conceive enhancements / modifications / new features for the kernel.  There would then be 3 roles in the process: the pure developers which submit code to the repository, the user-developers which may or may not contribute code but who also contribute enhancements with architecture / design implications and users, who as the name says, just use Linux, as in select and configure the available code.
+The first impression I had was that the development community just contributed the to the main deliverable, the source code repository.  I see a class of user-developers that conceive enhancements / modifications / new features for the kernel.  There would then be 3 roles in the process:
+1. the pure developers which submit code to the repository,
+1. the user-developers which may or may not contribute code but who also contribute enhancements with architecture / design implications and
+1. users, who as the name says, just use Linux, as in select and configure the available code.
 
 For this e-mail, I've enhanced the safety-critical lifecycle diagramme with 3 corresponding communities (enclosed).  The line of demarcation between the "pure" development community and the user-development community is somewhat arbitrary.  As a first guess,  I've put it above module design.  The upper group might be called "user community", but I think that if they were indeed a community, they band together and get involved in the development.  Per definition, that is not what I intend.
 
@@ -328,7 +333,12 @@ Taking a look at your original e-mail, I've recognized that the intent could hav
 
 It can also well be that the desired hardware / safety architecture can affect which development process is used.  Hypervisor-based? AMP or SMP? Separate single-processor chip?
 
-For this e-mail, I've extracted the communities layer from the diagramme and refined the concept of user-developers.  It's conceivable that we could identify or organize a safety community that manages the safety-related issues and Linux features.  There are other user-developer communities as well: the Android community (take a look at what Google has done for the Kernel), the security community (take a look at what Google, again, DARPA? (SELinux), seccomp or grsecuity have done), the container community(Docker, lxc/lxd, etc.).  Each of these communities contribute subsystem architectures / designs to the Kernel.  The user-developer / developer split seems to make sense.  That being said, getting intermediate work products, like design documentation for integration testing might be incredibly difficult.
+For this e-mail, I've extracted the communities layer from the diagramme and refined the concept of user-developers.  It's conceivable that we could identify or organize a safety community that manages the safety-related issues and Linux features.  There are other user-developer communities as well:
+- The Android community (take a look at what Google has done for the Kernel),
+- The security community (take a look at [Google again, DARPA? (SELinux), seccomp or grsecuity] have done),
+- The container community(Docker, lxc/lxd, etc.).
+
+Each of these communities contribute subsystem architectures / designs to the Kernel.  The user-developer / developer split seems to make sense.  That being said, getting intermediate work products, like design documentation for integration testing might be incredibly difficult.
 
 <img src="assets/graphics/LinuxCommunities.svg" alt="Linux Communities" class="svgImg">
 
@@ -390,3 +400,5 @@ So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all
 1. <https://lists.elisa.tech/g/development-process/message/269>
 1. <https://lists.elisa.tech/g/development-process/message/340>
 1. <https://lists.elisa.tech/g/development-process/message/592>
+
+*[OTS]: Off the shelf

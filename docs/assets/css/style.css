@@ -22,7 +22,7 @@ header	{
 		padding-top: 20px;
 		margin-left: 250px;
 		margin-bottom: 20px;
-		width: 700px;
+		width: 750px;
 }
 #banner	{
 		text-align: left;
@@ -37,7 +37,7 @@ nav		{
 }
 section, footer {
 		margin-left: 250px;
-		width: 700px;
+		width: 750px;
 }
 footer	{
 		margin-top: 20px;
@@ -64,6 +64,9 @@ footer	{
 .home a {
 		color: white;
 		text-decoration: none;
+}
+.alphaList {
+		list-style-type: lower-alpha;
 }
 .comment {
 		right: 0px;
