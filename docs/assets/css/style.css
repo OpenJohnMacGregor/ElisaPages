@@ -22,7 +22,7 @@ header	{
 		padding-top: 20px;
 		margin-left: 250px;
 		margin-bottom: 20px;
-		width: 800px;
+		width: 700px;
 }
 #banner	{
 		text-align: left;
@@ -37,7 +37,7 @@ nav		{
 }
 section, footer {
 		margin-left: 250px;
-		width: 800px;
+		width: 700px;
 }
 footer	{
 		margin-top: 20px;
