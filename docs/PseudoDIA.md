@@ -308,9 +308,9 @@ Who is he addressing here? Isn't it the Linux Development Community, not a user 
 Again the Development Community is involved... and the result is source code.  But, as with patches that make it to staging, the development community generates some activity on the mailing lists that reflect design or architectural decisions.
 
 The first impression I had was that the development community just contributed the to the main deliverable, the source code repository.  I see a class of user-developers that conceive enhancements / modifications / new features for the kernel.  There would then be 3 roles in the process:
-1. the pure developers which submit code to the repository,
-1. the user-developers which may or may not contribute code but who also contribute enhancements with architecture / design implications and
-1. users, who as the name says, just use Linux, as in select and configure the available code.
+1. The pure developers which submit code to the repository,
+1. The user-developers which may or may not contribute code but who also contribute enhancements with architecture / design implications and
+1. Users, who as the name says, just use Linux, as in select and configure the available code.
 
 For this e-mail, I've enhanced the safety-critical lifecycle diagramme with 3 corresponding communities (enclosed).  The line of demarcation between the "pure" development community and the user-development community is somewhat arbitrary.  As a first guess,  I've put it above module design.  The upper group might be called "user community", but I think that if they were indeed a community, they band together and get involved in the development.  Per definition, that is not what I intend.
 
@@ -335,7 +335,7 @@ It can also well be that the desired hardware / safety architecture can affect w
 
 For this e-mail, I've extracted the communities layer from the diagramme and refined the concept of user-developers.  It's conceivable that we could identify or organize a safety community that manages the safety-related issues and Linux features.  There are other user-developer communities as well:
 - The Android community (take a look at what Google has done for the Kernel),
-- The security community (take a look at [Google again, DARPA? (SELinux), seccomp or grsecuity] have done),
+- The security community (take a look at what [Google again, DARPA? (SELinux), seccomp or grsecuity] have done),
 - The container community(Docker, lxc/lxd, etc.).
 
 Each of these communities contribute subsystem architectures / designs to the Kernel.  The user-developer / developer split seems to make sense.  That being said, getting intermediate work products, like design documentation for integration testing might be incredibly difficult.
