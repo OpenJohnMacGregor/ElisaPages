@@ -52,7 +52,11 @@ footer	{
 		margin-right: auto;
 		width: 90%;
 }
+.hrefLevel1 {
+		margin top: 10px;
+}
 .hrefLevel2 {
+		margin top: 5px;
 		margin-left: 10px;
 }
 .home	{
@@ -80,6 +84,9 @@ ol.citation > li {
 }
 ol.citation.bracketsAround > li::marker {
 		content: "[" counter(list) "]\a0";
+}
+ol.citation.bracketsAround.lowerRoman > li::marker {
+		content: "[" counter(list, lower-roman) "]\a0";
 }
 .comment {
 		right: 0px;
