@@ -25,8 +25,8 @@ through its elements, their relationships to each other and to the
 system's environment as well as through the characteristics of its design and evolution.
 These characteristics in sum define its architecture.
 
-The [ISO/IEE][iee arch] definition differentiates between architecture, architecture description
-and design,
+The [ISO/IEE][iee arch] definition differentiates between architecture,
+architecture description and design,
 saying that architecture is either an abstract conception of the system
 or an abstract perception of the system.
 Architecture is focused on the interactions between the system and its environment
@@ -52,9 +52,14 @@ considerations.
 
 # Linux as Operating System
 
-Linux has a number of attributes that classify it as a particular type of operating system.
-They may dictate certain structure considerations,
-but are arguably not fundamental elements of Linux' architecture.
+Following the idea that an architecture is how a system is perceived in the abstract, 
+Linux is an example of the genre of the operating system computer programmes, 
+as opposed to, say, a database system or an application framework.
+The [Wikipedia definition of an operating system][wikipedia os] is probably an
+adequate description of the common characteristics of operating systems for the purposes of this paper.
+Linux furthermore has a number of attributes that classify it as a particular type of operating system.
+They may dictate certain structure considerations
+and are arguably fundamental elements of the abstract Linux architecture.
 
 <dl>
 	<dt>monolithic</dt>
@@ -79,13 +84,13 @@ but are arguably not fundamental elements of Linux' architecture.
 # Elements and Relationships
 
 The illustration below presents a functional view on Linux' architecture.
-According to the ISO/IEEE description, this would be a classic
+According to the [ISO/IEEE definition][iee arch], this would be a classic
 software architecture, focusing on the fundamental elements and their relationships.
 
 <img src="assets/graphics/LinuxArchitecture.svg" class="svgImg">
 
-All in all, in this representation Linux hardly differs from that of a generic
-operating system.
+All in all, in this representation Linux' functionality hardly differs
+from that of a generic operating system.
 Perhaps this is intuitive as operating system is a generic term and
 a the essence of an architecture is that it is something which,
 despite its genericity, can be recognised from its form.
@@ -139,7 +144,7 @@ as well as providing support services for the execution of computer programmes.
 		Resource control arbitrates between applications competing for the use of system resources.
 		It can deny, delay or limit applications' use of system resources based again on the identity 
 		the application has supplied.
-		In overload situations, resource control can revoke or limit applications's use of the resources
+		In overload situations, resource control can revoke or limit applicationss' use of the resources
 		to alleviate the overload.
 		Resource control includes process scheduling and process allocation to hardware cores.
 		</dd>
@@ -251,6 +256,8 @@ and could be considered architecture characterising elements or architectural fe
 1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/"IBM: Anatomy of the Linux Kernel")
 1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard "Wikipedia: File System Hierarchy Standard")
 1. [Wikipedia: Linux Kernel Interfaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces "Wikipedia: Linux Kernel Interfaces")
+1. [Wikipedia: Operating System] (https://en.wikipedia.org/wiki/Operating_system "Wikipedia: Linux Kernel Interfaces")
 {: .citation .bracketsAround .decimal}
 
 [iee arch]: http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture"
+[wikipedia os]: https://en.wikipedia.org/wiki/Operating_system "Wikipedia: Operating System"
