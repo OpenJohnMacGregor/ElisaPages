@@ -53,7 +53,7 @@ considerations.
 # Linux as Operating System
 
 Following the idea that an architecture is how a system is perceived in the abstract, 
-Linux is an example of the genre of the operating system computer programmes, 
+Linux is an example of the operating system genre of computer programmes, 
 as opposed to, say, a database system or an application framework.
 The [Wikipedia definition of an operating system][wikipedia os] is probably an
 adequate description of the common characteristics of operating systems for the purposes of this paper.
