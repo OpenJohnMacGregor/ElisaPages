@@ -251,5 +251,6 @@ and could be considered architecture characterising elements or architectural fe
 1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/"IBM: Anatomy of the Linux Kernel")
 1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard "Wikipedia: File System Hierarchy Standard")
 1. [Wikipedia: Linux Kernel Interfaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces "Wikipedia: Linux Kernel Interfaces")
+{: .citation .bracketsAround .decimal}
 
 [iee arch]: http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture"
