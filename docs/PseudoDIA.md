@@ -351,14 +351,15 @@ So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all
 
 ### External
 
-[Kernel Development Process WG Glossary](https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing "Kernel Development Process WG Glossary")<br/>
-[GPL 2.0 License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "GPL 2.0 License")<br/>
-[Linus Torvalds,  Linux 5.5-rc1](https://lwn.net/Articles/806771/ "Linus Torvalds,  Linux 5.5-rc1")<br/>
-[Linus Torvalds,  Linux 5.5-rc2](https://lwn.net/Articles/807349/ "Linus Torvalds,  Linux 5.5-rc2")<br/>
-[Linus Torvalds,  Linux 5.5-rc3](https://lwn.net/Articles/808000/ "Linus Torvalds,  Linux 5.5-rc3")<br/>
-[Linus Torvalds,  Linux 5.5-rc6](https://lwn.net/Articles/809255/ "Linus Torvalds,  Linux 5.5-rc6")<br/>
-[Linus Torvalds,  Linux 5.5-rc7](https://lwn.net/Articles/810011/ "Linus Torvalds,  Linux 5.5-rc7")<br/>
-[Linus Torvalds,  Linux 5.5-final](https://lwn.net/Articles/810579/ "Linus Torvalds,  Linux 5.5-final")<br/>
+1. [Kernel Development Process WG Glossary](https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing "Kernel Development Process WG Glossary")<br/>
+1. [GPL 2.0 License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "GPL 2.0 License")<br/>
+1. [Linus Torvalds,  Linux 5.5-rc1](https://lwn.net/Articles/806771/ "Linus Torvalds,  Linux 5.5-rc1")<br/>
+1. [Linus Torvalds,  Linux 5.5-rc2](https://lwn.net/Articles/807349/ "Linus Torvalds,  Linux 5.5-rc2")<br/>
+1. [Linus Torvalds,  Linux 5.5-rc3](https://lwn.net/Articles/808000/ "Linus Torvalds,  Linux 5.5-rc3")<br/>
+1. [Linus Torvalds,  Linux 5.5-rc6](https://lwn.net/Articles/809255/ "Linus Torvalds,  Linux 5.5-rc6")<br/>
+1. [Linus Torvalds,  Linux 5.5-rc7](https://lwn.net/Articles/810011/ "Linus Torvalds,  Linux 5.5-rc7")<br/>
+1. [Linus Torvalds,  Linux 5.5-final](https://lwn.net/Articles/810579/ "Linus Torvalds,  Linux 5.5-final")<br/>
+{: .citation .bracketsAround .decimal}
 
 [devWG glossary]: https://docs.google.com/document/d/1d91Znr2IWPI3pgDk_Nz2BcVNWHQgyBxk_18dAqnskiw/edit?usp=sharing. "Kernel Development Process WG Glossary"
 [gnu v2.0]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "GPL 2.0 License"
@@ -400,5 +401,6 @@ So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all
 1. <https://lists.elisa.tech/g/development-process/message/269>
 1. <https://lists.elisa.tech/g/development-process/message/340>
 1. <https://lists.elisa.tech/g/development-process/message/592>
+{: .citation .bracketsAround .decimal}
 
 *[OTS]: Off the shelf

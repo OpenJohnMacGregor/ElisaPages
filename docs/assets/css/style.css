@@ -68,6 +68,19 @@ footer	{
 .alphaList {
 		list-style-type: lower-alpha;
 }
+.romanList {
+			list-style-type: lower-roman;
+}
+ol.citation {
+		counter-reset: list;
+}
+ol.citation > li {
+		list-style: none;
+		counter-increment: list;
+}
+ol.citation.bracketsAround > li::marker {
+		content: "[" counter(list) "]\a0";
+}
 .comment {
 		right: 0px;
 		margin: 5px 0px 5px 10px;
