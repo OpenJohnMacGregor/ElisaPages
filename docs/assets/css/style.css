@@ -1,6 +1,7 @@
 body	{
 		margin: 0;
 		padding: 0;
+		color: #0f0f0f;
 }
 blockquote {
 		font-style: italic;
@@ -27,6 +28,9 @@ header	{
 #banner	{
 		text-align: left;
 		padding: 10px;
+}
+#banner a {
+		color: mediumSlateBlue;
 }
 nav		{
 		position: fixed;
