@@ -8,4 +8,5 @@ vendor
 *.html
 *.lock
 *.bak
+.bundle
 go
