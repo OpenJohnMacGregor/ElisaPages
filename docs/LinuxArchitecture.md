@@ -6,6 +6,10 @@ description: Discussion papers related to the Linux Foundation ELISA Project
 > This paper defines the architecture of the Linux operating system to aid
 > the analysis of its safety integrity and ultimately to make inferences about the
 > methods and techniques used in its construction.
+>
+> One of the essential questions that must be answered thereby is the 
+> level of abstraction and granularity appropriate for modelling the essential
+> structures of the architecture and their relations.
 
 # Architectures
 
@@ -34,6 +38,13 @@ whereas design is more focused inwardly.
 The difference between architecture and architecture description is more difficult to determine
 as the architecture description focuses on the artifacts used to express and document
 architectures whereas architecture remains abstract.
+
+In a [related document][iee archDescription], ISO/IEE details the conceptual model
+behind an architectural description.
+The description goes in the direction of focusing on more or less individual artifacts
+and regards them under various viewpoints.
+This diverges from the holistic viewpoint needed to establish the level of
+abstraction and granularity appropriate for an architectural model.
 
 For the purpose of this document, the elements expressed in the architecture represent
 functionalities the operating system's environment can use to interact with it in order
@@ -144,7 +155,7 @@ as well as providing support services for the execution of computer programmes.
 		Resource control arbitrates between applications competing for the use of system resources.
 		It can deny, delay or limit applications' use of system resources based again on the identity 
 		the application has supplied.
-		In overload situations, resource control can revoke or limit applicationss' use of the resources
+		In overload situations, resource control can revoke or limit applications' use of the resources
 		to alleviate the overload.
 		Resource control includes process scheduling and process allocation to hardware cores.
 		</dd>
@@ -254,10 +265,19 @@ and could be considered architecture characterising elements or architectural fe
 1. [ISO/IEE Definition of Architecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture")
 2. [ISO/IEE Conceptual Model of Architecture Description](http://www.iso-architecture.org/ieee-1471/cm/ "ISO/IEE Conceptual Model of Architecture Description")
 1. [IBM: Anatomy of the Linux Kernel](https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/ "IBM: Anatomy of the Linux Kernel")
+1. [Univ of Waterloo: Conceptual Architecture of the Linux Kernel](https://docs.huihoo.com/linux/kernel/a1/index.html "Univ of Waterloo: Conceptual Architecture of the Linux Kernel")
+1. [MakeLinux: Interactive Map of the Linux Kernel]( https://makelinux.github.io/kernel/map/ "MakeLinux: Interactive Map of the Linux Kernel") Warning: slow loading...
 1. [Wikipedia: File System Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard "Wikipedia: File System Hierarchy Standard")
 1. [Wikipedia: Linux Kernel Interfaces](https://en.wikipedia.org/wiki/Linux_kernel_interfaces "Wikipedia: Linux Kernel Interfaces")
+1. [Wikipedia: Linux Kernel](https://en.wikipedia.org/wiki/Linux_kernel "Wikipedia: Linux Kernel")
 1. [Wikipedia: Operating System](https://en.wikipedia.org/wiki/Operating_system "Wikipedia: Linux Kernel Interfaces")
 {: .citation .bracketsAround .decimal}
 
 [iee arch]: http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture"
+[iee archDescription]: http://www.iso-architecture.org/ieee-1471/cm/ "ISO/IEE Conceptual Model of Architecture Description"
+[ibm kernelAnatomy]: https://developer.ibm.com/technologies/linux/articles/l-linux-kernel/ "IBM: Anatomy of the Linux Kernel"
+[makelinux interactiveMap]:  https://makelinux.github.io/kernel/map/ "MakeLinux: Interactive Map of the Linux Kernel"
+[waterloo conceptualArch]: https://docs.huihoo.com/linux/kernel/a1/index.htmli "Univ of Waterloo: Conceptual Architecture of the Linux Kernel"
+[wikipedia kernelInterfaces]: https://en.wikipedia.org/wiki/Linux_kernel_interfaces "Wikipedia: Linux Kernel Interfaces"
+[wikipedia: linuxKernel]: https://en.wikipedia.org/wiki/Linux_kernel "Wikipedia: Linux Kernel"
 [wikipedia os]: https://en.wikipedia.org/wiki/Operating_system "Wikipedia: Operating System"
