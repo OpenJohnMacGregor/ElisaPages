@@ -8,11 +8,11 @@ title: ELISA Pages Home
 > In the famous words attributed to Konrad Adenauer (although I seem to remember to have heard 
 > that it's a variant on an old prussian saying...)
 
-> "Was kümmert mich mein Geschwätz von gestern?[^1]" [^2]
+> "Was kümmert mich mein Geschwätz von gestern?[^1]"
+
 {: style="text-align: center;"}
 
 [^1]: *Es kann mich niemand daran hindern, jeden Tag klüger zu werden.*
-[^2]: If you're wondering what the English translation of that would be, don't ask me...
 
 ## Contents
 
