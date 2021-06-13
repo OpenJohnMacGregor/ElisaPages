@@ -16,9 +16,9 @@ Current safety standards have targeted systems which have low-complexity applica
 which do not use hardware concurrency (e.g. multicore processors),
 and which use pre-existing and open-source software to a very limited extent. 
 Hence, various domain safety standards (
-ISO 26262 <cite class="todo">ISO26262:2018</cite>,
-IEC 62304 <cite class="todo">IEC62304</cite>,
-EN 50128 <cite class="todo">DINEN50128</cite>,
+[\[ISO 26262\]](#iso26262){: target="_self"},
+[\[IEC 62304\]](#iec62304){: target="_self"},
+[\[DIN/EN50128\]](#dinen51208){: target="_self"},
 ...)
 do not consider pre-existing complex elements,
 such as Linux and glibc, running on complex multi-core hardware. 
@@ -73,9 +73,7 @@ the organizational structure of the ELISA effort.
 
 Currently ELISA has 5 working groups.
 Their presence is spread over a convoluted combination of 
-[ELISA tech](https://elisa.tech/ "ELISA - Advancing Open Source Safety-Critical Systems - ELISA"),
-[GDrive](https://drive.google.com/drive/folders/1Y6Uwqt5VEDEZjpRe0CBCIibdtXPgDwlG "Technical Community - Google Drive"), and
-[GitHub](https://github.com/elisa-tech/workgroups "GitHub - elisa-tech/workgroups: Coordination between ELISA working groups, and repository for documentation based deliverables.")
+[ELISA Tech][elisa tech], [ELISA GDrive][elisa gdrive] and [ELISA GitHub][elisa github]
 sites.
 There are also a number of overarching subgroups.
 ### ELISA Tech WG
@@ -107,25 +105,25 @@ This strategy pertains to all areas, including but not limited to:
 
 **Standards**
 
-* ISO/IEC 33000 series of standards, CMMI, ASPICE <cite class="todo">ISO3300x:2015,CMMI,ASPICE</cite>
-* UL1998 <cite class="todo">UL1998</cite>
-* ISO 9001 <cite class="todo">ISO9001:2015</cite>
-* IEC 61508 / ISO 26262 <cite class="todo">IEC61508:2010,ISO26262:2018</cite>
+* ISO/IEC 33000 series of standards [\[ISO 3300x\]](#iso3300x){: target="_self"}, [CMMI][cmmi], [ASPICE][aspice]
+* [\[UL1998\]](#ul1998){: target="_self"}
+* [\[ISO 9001\]](#iso9001){: target="_self"}
+* [\[IEC 61508\]](#iec61508){: target="_self"} / [\[ISO 26262\]](#iso26262){: target="_self"}
 
 As QM software development is a basic requirement for developing any good quality software and
 to eliminate systematic faults to achieve safety, the approach can be to start small 
 i.e, show that LINUX development meets the requirements of a basic software development process 
 (e.g. ISO/IEC 33000 series of standards
-<cite class="todo">ISO3300x:2015</cite>, 
-Capability Maturity Model Integration (CMMI)
-<cite class="todo">CMMI</cite>,
-or Automotive SPICE
-<cite class="todo">ASPICE</cite>).
-Once this is achieved the requirements of UL1998
-<cite class="todo">UL1998</cite>
-(less rigorous requirements compared to IEC61508/ISO26262) can be added, 
-followed by requirements from IEC61508 and ISO26262
-<cite class="todo">IEC61508:2010,ISO26262:2018</cite>.
+[\[ISO 3300x\]](#iso3300x){: target="_self"}
+Capability Maturity Model Integration (CMMI) (see [CMMI][cmmi])
+or Automotive SPICE (see  [ASPICE][aspice]).
+Once this is achieved the requirements of 
+[\[UL 1998\]](#ul1998){: target="_self"}
+(less rigorous requirements compared to IEC 61508 / ISO 26262) can be added, 
+followed by requirements from 
+[\[IEC 61508\]](#iec61508){: target="_self"}
+and 
+[\[ISO 26262\]](#iso26262){: target="_self"}
 
 **Safety Claims**
 ELISA will work on safety claims of increasing complexity.
@@ -147,9 +145,9 @@ This needs to address partitioning architectural measures, i.e. separate process
 
 **POSIX API Levels / Application environment profiles**
 The POSIX standard
-<cite class="todo">IEEE1003.1:2010</cite>
+[\[POSIX\]](#posix){: target="_self"}
 outlines in part 13
-<cite class="todo">IEEE1003.13:2003</cite>
+[\[PSE5x\]](#pse5x){: target="_self"}
 application environment profiles (Effectively minimal subsets of the POSIX APIs
 required for typical realtime applications) in rising complexities.
 
@@ -187,7 +185,7 @@ behind the requirements of the safety standards.
 This heavy tailoring/modification (beyond what is outlined within the safety standards as tailoring),
 requires a systematic approach to achieve confidence in the tailoring arguments.
 Such a methodology (including practical application examples) has already been developed for
-tailoring of IEC 61508 within the SIL2LinuxMP project, see <cite class="todo">AnnexQR</cite>.
+tailoring of IEC 61508 within the SIL2LinuxMP project (see [Annex QR][annexQR]).
 
 If such an argument cannot be made, a gap exists that has to be addressed by
 modifying and or extending the Linux Kernel development process.
@@ -199,8 +197,8 @@ Annex QR was originally intended to be included into IEC 61508.
 In the event that this happens in a future edition of the standard,
 the described argumentation would then even be fully compliant.
 
-This topic is addressed by the Process subgroup 
-<span class="todo">ref{sssec:Development Process Subgroup</span>.
+This topic is addressed by the 
+[Process working group](#development-process-wg){: target="_self"}
 
 ### Example Use Cases
 
@@ -219,7 +217,7 @@ supporting the creation of critical products and systems based on Linux,
 
 Beyond the two use cases already under consideration (
 <span class="todo">\ref{sssec:OpenAPS}</span> and
-<span class="todo">\ref{sssec:OpenAPS}< John: which one is this?/span>),
+<span class="todo">\ref{sssec:OpenAPS} John: which one is this?</span>),
 a cooperation with AGL (Automotive Grade Linux) is currently being established
 providing a third use case related to the IVI use case.
 
@@ -252,10 +250,8 @@ The following sections go into more detail on the two use cases currently under 
 
 **OpenAPS**
 The OpenAPS project develops an artificial pancreas System to control insulin pumps.
-<span class="todo">\label{sssec:OpenAPS</span>
 
 **IVI**
-<span class="todo">\label{sssec:IVI</span>
 The in vehicle Infotainment.
 
 ## Development of Open Building Blocks
@@ -279,7 +275,7 @@ and will be used even more in future,
 so Linux is a shared point of interest for the Linux and Safety communities.   
 
 We need to reach out to both of these communities and get them talking
-to antother in order to bridge the gaps.
+to another in order to bridge the gaps.
 This will require marketing-related activities to raise awareness 
 and motivate involvement that aligns with their interests.
 Once they are engaged, this needs to be a community that they 
@@ -384,12 +380,10 @@ and will be more use in future
 * Problem now is getting acceptance and formal approval that Linux is suitable to be used in these safety-critical systems and applications 
 
 # OSS-Specific Challenges
-<span class="todo">\label{sec:OSS specific Challenges</span>
 This section presents the major challenges ELISA faces.
 The following section presents how they are being addressed.
 
 ## Updates and Change
-<span class="todo">\label{ssec:Updates and Change</span>
 Today, the majority of existing certified safety-related products 
 are not updated in the field.
 This is driven by the fact 
@@ -437,8 +431,8 @@ low quality bug reports are an issue that further increases
 the work load without any gain for the project in question.
 This is not so much a problem for the Kernel bug tracker
 <span class="todo">[reference] </span>
-but for the distributions downstream, see 
-<span class="todo">[reference to short/long term solutions], </span>
+but for the distributions downstream, (see the
+[short and long-term solutions section](#bug-tracking-1){: target="_self"})
 which absorb the bulk of low quality bug reports.
 
 From a safety perspective, 
@@ -463,11 +457,11 @@ A safety impact analysis must be done and it may reveal that further mitigation 
 ## Freedom from Interference - Kernel Model
 On the technical side, we need to understand better which safety claims can be made for the Linux kernel, 
 and how to insulate against interference. 
-This topic touches all use case working groups and the  architecture working group.
+This topic touches all use case working groups and the
+[architecture working group](#safety-architecture-wg){: target="_self"}.
 To create a Kernel model of sufficient granularity, 
-several code analysis based approaches are being investigated.
-<span class="todo">[reference to code analysis]</span>
-<span class="todo">[reference to architecture group]</span>
+several code analysis based approaches are being investigated in the
+[tool investigation and code improvement sg](#tool-investigation-and-code-improvement-sg){: target="_self"}
 
 ## Linux Development Process Analysis
 A big challenge is to argue the aforementioned equivalence with
@@ -475,12 +469,13 @@ the conventional development processes envisaged by the safety standards
 
 
 # Overcoming the Challenges
-This section presents our plan to overcome the challenges outlined in section
-<span class="todo" >\ref{sec:OSS specific Challenges}</span>
+This section presents our plan to overcome the challenges outlined in the 
+[OSS specific challenges](#oss-specific-challenges){: target="_self"}
+section
 
 ## Updates and Change
 As outlined in
-<span class="todo">\ref{ssec:Updates and Change},</span>
+[Updates and Change challenge description](#updates-and-change){: target="_self"}
 timely updates are a major issue.
 ELISA is working towards short and long term solutions as follows.
 
@@ -694,8 +689,98 @@ Gaps should be identified and then rationalized or closed by extending the Proce
 
 <p class="todo">TBD</p>
 
-# Appendix
-<p class="todo">\section{License and Document History</p>
+# Links
+
+1. [Annex QR](https://sil2.osadl.org/user/data/SIL2LinuxMP/doc/other/AnnexQR/AnnexQR.pdf "Annex QR")
+2. [ASPICE](http://www.automotivespice.com/ "Automotive SPICE")
+2. [CMMI](https://cmmiinstitute.com/ "Capability Maturity Model")
+2. [ELISA: ELISA tech](https://elisa.tech/ "ELISA - Advancing Open Source Safety-Critical Systems - ELISA")
+2. [ELISA: GDrive](https://drive.google.com/drive/folders/1Y6Uwqt5VEDEZjpRe0CBCIibdtXPgDwlG "Technical Community - Google Drive")
+2. [ELISA: GitHub](https://github.com/elisa-tech/workgroups "GitHub - elisa-tech/workgroups: Coordination between ELISA working groups, and repository for documentation based deliverables.")
+
+
+[annexQR]: https://sil2.osadl.org/user/data/SIL2LinuxMP/doc/other/AnnexQR/AnnexQR.pdf "Annex QR"
+[aspice]: http://www.automotivespice.com/ "ASPICE"
+[cmmi]: https://cmmiinstitute.com/ "Capability Maturity Model"
+[elisa tech]: https://elisa.tech/ "ELISA - Advancing Open Source Safety-Critical Systems - ELISA"
+[elisa gdrive]: https://drive.google.com/drive/folders/1Y6Uwqt5VEDEZjpRe0CBCIibdtXPgDwlG "Technical Community - Google Drive"
+[elisa github]: https://github.com/elisa-tech/workgroups "GitHub - elisa-tech/workgroups: Coordination between ELISA working groups, and repository for documentation based deliverables."
+
+# References
+
+<dl>
+	<dt id="dinen51208">[DIN 51028:2012]</dt>
+		<dd>
+		Bahnanwendungen - Telekomunikationstechnik, Signaltechnik und Datenverarbeitungssysteme -
+		Software für Eisenbahnsteuerungs- und Überwachungssysteme.  Standard, 
+		DIN Deutsches Institut für  Normung E.V., March 2012
+		</dd>
+	<dt id="iec61508">[IEC 61508:2010]</dt>
+		<dd>
+		Functional safety of electrical/electronic/programmable electronic safety-related systems.
+		Standard,
+		IEC International Electrotechnical Commission,
+		April 2010.
+		</dd>
+	<dt id="iec62304">[IEC 62304:2015]</dt>
+		<dd>
+		Medical device software - 
+		Software life cycle processes.
+		Standard,
+		IEC/SC 62A Allgemeine Bestimmungen für elektrische Einrichtungen in medizinischer Anwendung,
+		June 2015
+		</dd>
+	<dt id="posix">[IEEE POSIX:2017]</dt>
+		<dd>
+		IEEE Standard for Information Technology -
+		Portable Operating System Interface (POSIX(R)) Base Specifications.
+		Standard,
+		IEEE The Institue of Electrical and Electronic Engineers,
+		January 2017
+		</dd>
+	<dt id="pse5x">[IEEE PSE5x:2003]</dt>
+		<dd>
+		Information Technology -
+		Standardized application environment profile (AEP) -
+		POSIX(R) realtime and embedded application support.
+		Standard,
+		IEEE The Institute of Electrical and Electronic Engineers,
+		January 2003
+		</dd>
+	<dt id="iso26262">[ISO 26262:2018]</dt>
+		<dd>
+		Road Vehicles - Functional safety. 
+		Standard,
+		International Organiszation for Standardization,
+		Geneva, CH, December 2012
+		</dd>
+	<dt id="iso3300x">[ISO 3300x:2015]</dt>
+		<dd>
+		Information Technology. Process Assessment.
+		Standard,
+		ISO/IEC JTC 1/SC 7 Software and Systems Engineering,
+		March 2015
+		</dd>
+	<dt id="iso9001">[ISO 9001:2015]</dt>
+		<dd>
+		Quality management systems - 
+		Requirements (ISO 9001:2015);
+		German and English version
+		EN ISO 9001:2015.
+		Standard,
+		DIN-Normenausschusss Qualitätsmanagement, Statistik und Zertifizierungsgrundlagen (NQSZ),
+		November 2015
+		</dd>
+	<dt id="ul1998">[UL 1998:2018]</dt>
+		<dd>
+		Software in programmable components,
+		Standard,
+		UL llc,
+		September 2018
+		</dd>
+</dl>
+
+# Appendices
 
 ## License
 

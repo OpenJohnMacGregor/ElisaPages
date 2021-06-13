@@ -7,7 +7,9 @@ blockquote {
 		font-style: italic;
 }
 dt		{
+		margin-top: 5px;
 		color: green;
+		font-weight: 500;
 }
 dd {
 		font-style: italic;

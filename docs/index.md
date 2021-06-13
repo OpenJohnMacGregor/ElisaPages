@@ -5,10 +5,10 @@ title: ELISA Pages Home
 
 > This is a personal site to hold discussion documents, mostly for the ELISA Ontology task force.
 > The contents of the site are by definition work in progress and may change from day to day.
-> In the famous words attributed to Konrad Adenauer (although I seem to remember to have heard 
-> that it's a variant on an old prussian saying...)
+> In the famous words attributed to Konrad Adenauer (although I seem to remember hearing 
+> that it's a variant on an old Prussian saying...)
 
-> "Was kümmert mich mein Geschwätz von gestern?[^1]"
+> "Was kümmert mich mein Geschwätz von gestern?" [^1] 
 
 {: style="text-align: center;"}
 
@@ -18,8 +18,14 @@ title: ELISA Pages Home
 
 ### Linux Architecture
 
-I created a definition of Linux' architecture to provide a basis for discussions in the Architecture WG.
-Ultimately, it could be useful throughout the project.
+Different members of the Architecture WG seem to use the term "architecture" in a number of
+imprecise and unclear ways.
+Paul Albertella started an e-mail thread on the term, to which Chris Temple provided a link to
+the IEE general defintion of "architecture".
+I decided to apply that definition to Linux to provide a basis for discussions in the Architecture WG.
+Hopefully we'll ultimately arrive at a common understanding of the architectures (system, software and Linux)
+that our project addresses.
+This in turn could be useful throughout the project.
 The Ontology WG should then adopt and maintain it.
 
 **Link:** [Linux Architecture](LinuxArchitecture.html)
@@ -40,7 +46,8 @@ In anticipation of the Onboarding Website, I translated the White Paper document
 
 Lukas Bulwahn proposed defining a "Pseudo-DIA" way back in April 2020.
 After digesting the proposal for a while, I wrote a review of the concept in a series of e-mails.
-Activity on the subject basically ended in June 2020, and has lain dormant ever since.
+Activity on the subject basically ended in June 2020, 
+and the idea has lain dormant ever since.
 But, lo and behold the topic came up in a recent conversation with an ELISA colleague
 who was thinking about working on a DIA-related topic.
 
