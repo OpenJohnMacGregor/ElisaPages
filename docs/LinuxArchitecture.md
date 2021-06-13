@@ -260,7 +260,7 @@ and could be considered architecture characterising elements or architectural fe
 		</dd>
 </dl>
 
-# References
+# Links
 
 1. [ISO/IEE Definition of Architecture](http://www.iso-architecture.org/ieee-1471/defining-architecture.html "ISO/IEE Definition of Architecture")
 2. [ISO/IEE Conceptual Model of Architecture Description](http://www.iso-architecture.org/ieee-1471/cm/ "ISO/IEE Conceptual Model of Architecture Description")
