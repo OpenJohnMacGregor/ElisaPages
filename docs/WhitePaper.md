@@ -713,7 +713,7 @@ Gaps should be identified and then rationalized or closed by extending the Proce
 		<dd>
 		Bahnanwendungen - Telekomunikationstechnik, Signaltechnik und Datenverarbeitungssysteme -
 		Software für Eisenbahnsteuerungs- und Überwachungssysteme.  Standard, 
-		DIN Deutsches Institut für  Normung E.V., March 2012
+		DIN Deutsches Institut für Normung E.V., March 2012
 		</dd>
 	<dt id="iec61508">[IEC 61508:2010]</dt>
 		<dd>

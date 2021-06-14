@@ -8,7 +8,7 @@ blockquote {
 }
 dt		{
 		margin-top: 5px;
-		color: green;
+		color: mediumSlateBlue;
 		font-weight: 500;
 }
 dd {
@@ -48,8 +48,12 @@ section, footer {
 footer	{
 		margin-top: 20px;
 }
+:target	{
+		color: #0f0f0f;
+		background-color: mediumSlateBlue;
+}
 .docTitle {
-		font-style: bold;
+		font-weight: bold;
 		text-align: center;
 }
 .svgImg	{
