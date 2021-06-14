@@ -144,12 +144,13 @@ This needs to address partitioning architectural measures, i.e. separate process
 </p>
 
 **POSIX API Levels / Application environment profiles**
-The POSIX standard
-[\[POSIX\]](#posix){: target="_self"}
-outlines in part 13
-[\[PSE5x\]](#pse5x){: target="_self"}
-application environment profiles (Effectively minimal subsets of the POSIX APIs
-required for typical realtime applications) in rising complexities.
+There are several, increasingly complex standards that specify application interfaces that could be
+used in safety-critical systems.
+Only the safety-critical interfaces of the operating system must be certified according to safety standards.
+The effort required to certify as system using Linux could therefore be reduced by
+limiting the scope of the calls an application makes to the operating system.
+
+The standards form the following hierarchy:
 
 * PSE51
 * PSE52
@@ -158,14 +159,23 @@ required for typical realtime applications) in rising complexities.
 * Full POSIX
 * LSB
 
-<pre><code>
-Disconnected inherited text of unknown origin :
+The POSIX standard
+[\[POSIX\]](#posix){: target="_self"}
+outlines in part 13
+[\[PSE5x\]](#pse5x){: target="_self"}
+application environment profiles (Effectively minimal subsets of the POSIX APIs
+required for typical realtime applications) in rising complexities.
+Linux' API is a superset of the full POSIX standard and is specified as
+[LSB: the Linux Standard Base][lsb]
+
+<pre><code class="todo">
+ToDo: Disconnected inherited text of unknown origin :
 	Propose liason process (like DO-178)
 	Define SIL0/QM (ref: Clause 7-X  formalization as starting point)
 	Qualify “convincing” parts of the examples  
 </code></pre>
 
-## Developing a Safety Argumentation
+## Develop Safety Argumentation
 
 ### Process - Tailoring and Equivalence Argumentation
 
@@ -198,7 +208,7 @@ In the event that this happens in a future edition of the standard,
 the described argumentation would then even be fully compliant.
 
 This topic is addressed by the 
-[Process working group](#development-process-wg){: target="_self"}
+[development process working group](#development-process-wg){: target="_self"}
 
 ### Example Use Cases
 
@@ -221,29 +231,22 @@ Beyond the two use cases already under consideration (
 a cooperation with AGL (Automotive Grade Linux) is currently being established
 providing a third use case related to the IVI use case.
 
+Steps:
 
-<pre><code>
-Again, mysterious text
-	%Steps
-		%identify sources of usecases
-		%existing open source initiatives (eg Apollo/Autoware)
-		%proposed by sponsors
-		%classical safety architectures
-		%evaluate and score potential usecases
-		%select actual usecase(s)
-		%get started on usecases
-		%refinement
-		%scoping work
-		%Implementation (code examples, tools, and libraries)
-		%evidence evaluation
-		%
-		%See https://github.com/elisa-tech/workgroups/issues/8
-		%
-		%See https://github.com/elisa-tech/workgroups/issues/9
-		%
-		%See https://github.com/elisa-tech/workgroups/issues/10
-	%
-</code></pre>
+* identify sources of usecases
+* existing open source initiatives (eg Apollo/Autoware)
+* proposed by sponsors
+* classical safety architectures
+* evaluate and score potential usecases
+* select actual usecase(s)
+* get started on usecases
+* refinement
+* scoping work
+* Implementation (code examples, tools, and libraries)
+* evidence evaluation
+* See <https://github.com/elisa-tech/workgroups/issues/8>
+* See <https://github.com/elisa-tech/workgroups/issues/9>
+* See <https://github.com/elisa-tech/workgroups/issues/10>
 
 
 The following sections go into more detail on the two use cases currently under investigation by the ELISA group.
@@ -254,7 +257,7 @@ The OpenAPS project develops an artificial pancreas System to control insulin pu
 **IVI**
 The in vehicle Infotainment.
 
-## Development of Open Building Blocks
+## Develop Open Building Blocks
 The results of the ELISA activities is a collection of reusable building blocks and
 instructions/examples on how to use them to construct safety argumentation for Linux-based systems.
 
@@ -697,6 +700,7 @@ Gaps should be identified and then rationalized or closed by extending the Proce
 2. [ELISA: ELISA tech](https://elisa.tech/ "ELISA - Advancing Open Source Safety-Critical Systems - ELISA")
 2. [ELISA: GDrive](https://drive.google.com/drive/folders/1Y6Uwqt5VEDEZjpRe0CBCIibdtXPgDwlG "Technical Community - Google Drive")
 2. [ELISA: GitHub](https://github.com/elisa-tech/workgroups "GitHub - elisa-tech/workgroups: Coordination between ELISA working groups, and repository for documentation based deliverables.")
+2. [LSB](https://refspecs.linuxfoundation.org/lsb.shtml "Linux Foundation LSB Specification")
 
 
 [annexQR]: https://sil2.osadl.org/user/data/SIL2LinuxMP/doc/other/AnnexQR/AnnexQR.pdf "Annex QR"
@@ -705,6 +709,7 @@ Gaps should be identified and then rationalized or closed by extending the Proce
 [elisa tech]: https://elisa.tech/ "ELISA - Advancing Open Source Safety-Critical Systems - ELISA"
 [elisa gdrive]: https://drive.google.com/drive/folders/1Y6Uwqt5VEDEZjpRe0CBCIibdtXPgDwlG "Technical Community - Google Drive"
 [elisa github]: https://github.com/elisa-tech/workgroups "GitHub - elisa-tech/workgroups: Coordination between ELISA working groups, and repository for documentation based deliverables."
+[lsb]: https://refspecs.linuxfoundation.org/lsb.shtml "Linux Foundation LSB Specification"
 
 # References
 
