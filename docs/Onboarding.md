@@ -26,10 +26,8 @@ For example, ISO 26262 has no appropriate classification of Linux, which is a �
 But Linux continues to evolve and Part 8-12 applies only to unchanged SWCs (See ISO 26262-2 6-7.4.7). 
 This specific mismatch already indicates that the ISO 26262 committee did not consider Linux-based systems.
 
-<p class="comment">
 John: A long, labourious, detailed, picky and totally irrelevant comment that only serves to fill space
 and see if the text wraps a line.
-</p>
 {: .comment}
 
 An example of the cultural mismatch between the methodology expected by safety
@@ -76,25 +74,41 @@ Their presence is spread over a convoluted combination of
 [ELISA Tech][elisa tech], [ELISA GDrive][elisa gdrive] and [ELISA GitHub][elisa github]
 sites.
 There are also a number of overarching subgroups.
+
 ### ELISA Tech WG
 The Tech working group discusses overarching technical and organisational issues and supporty the TSC in this direction.
 It holds bi-weekly telcos where the general public is invited to participate and where the TSC members are obligated to participate.
 #### Technical Strategy Committee (TSC)
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 ### Automotive WG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 ### Development Process WG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 #### Tool Investigation and Code Improvement SG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 ### Medical Devices WG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 ### Safety Architecture WG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 ### ELISA Ambassadors SG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
+
 ### Ontology SG
-<p class="todo">TBD</p>
+TBD
+{: .todo}
 
 ## Increasing Rigour Strategy
 Due to the immense complexity and huge deviations from traditional V-model style
@@ -138,10 +152,10 @@ it can be expanded to more complex systems.
 Aligned with the increasing rigor approach,
 ELISA targets architectures of increasing complexity to keep the scope as limited as possible at first,
 expanding to more complex architectures later on.
-<p class="todo">
+
 ToDo: Need examples.
 This needs to address partitioning architectural measures, i.e. separate processor, hypervisor, AMP, etc.
-</p>
+{: .todo}
 
 **POSIX API Levels / Application environment profiles**
 There are several, increasingly complex standards that specify application interfaces that could be
@@ -168,12 +182,13 @@ required for typical realtime applications) in rising complexities.
 Linux' API is a superset of the full POSIX standard and is specified as
 [LSB: the Linux Standard Base][lsb]
 
-<pre><code class="todo">
+```
 ToDo: Disconnected inherited text of unknown origin :
 	Propose liason process (like DO-178)
 	Define SIL0/QM (ref: Clause 7-X  formalization as starting point)
 	Qualify “convincing” parts of the examples  
-</code></pre>
+```
+{: .todo}
 
 ## Develop Safety Argumentation
 
@@ -187,9 +202,9 @@ steps in the V- process of the safety standards
 and find equivalence arguments as to why the Kernel development process fulfills the intention
 behind the requirements of the safety standards.
 <!--
-%To close the interpretation gap it is necessary to map terms and processes to each other
-%Identify rationales in the safety standards (domain specific or IEC 61508)
-%Tailoring the safety standards according to the rationale
+  To close the interpretation gap it is necessary to map terms and processes to each other
+  Identify rationales in the safety standards (domain specific or IEC 61508)
+  Tailoring the safety standards according to the rationale
 -->
 
 This heavy tailoring/modification (beyond what is outlined within the safety standards as tailoring),
@@ -226,8 +241,9 @@ supporting the creation of critical products and systems based on Linux,
 * as a means of attracting contributors into the ELISA community.
 
 Beyond the two use cases already under consideration (
-<span class="todo">\ref{sssec:OpenAPS}</span> and
-<span class="todo">\ref{sssec:OpenAPS} John: which one is this?</span>),
+*\ref{sssec:OpenAPS}*{: .todo}
+and
+*\ref{sssec:OpenAPS} John: which one is this?*{: .todo},
 a cooperation with AGL (Automotive Grade Linux) is currently being established
 providing a third use case related to the IVI use case.
 
@@ -299,7 +315,8 @@ The gold deck can be used to explain the problem and need for participants:
 * Wider community to draw on for security issues.
 * ELISA builds a wider community focused on safety issues
 
-<p class="todo">AI:  Kate to take first pass; Nicole, Nicholas, Olaf to review.</p>
+AI:  Kate to take first pass; Nicole, Nicholas, Olaf to review.
+{: .todo}
 
 ### How do we want to communicate?
 * Good website (What content do we want to add?)
@@ -334,7 +351,8 @@ on a regular cadence of communication twitter channel
 	* Trigger news sites to pick up.
 	* Electronic Net newsletter,  headlines.
 
-<p class="todo">AI Nicole: Outreach to Bitkom Forum:  Provide overview at next working group meeting.</p>
+AI Nicole: Outreach to Bitkom Forum:  Provide overview at next working group meeting.
+{: .todo}
 
 ### Strategies needed to build up organic communities,  rallying points
 
@@ -469,7 +487,6 @@ several code analysis based approaches are being investigated in the
 ## Linux Development Process Analysis
 A big challenge is to argue the aforementioned equivalence with
 the conventional development processes envisaged by the safety standards 
-
 
 # Overcoming the Challenges
 This section presents our plan to overcome the challenges outlined in the 
@@ -690,7 +707,8 @@ Gaps should be identified and then rationalized or closed by extending the Proce
 
 # Conclusion
 
-<p class="todo">TBD</p>
+TBD
+{: .todo}
 
 # Links
 
@@ -713,77 +731,66 @@ Gaps should be identified and then rationalized or closed by extending the Proce
 
 # References
 
-<dl>
-	<dt id="dinen51208">[DIN 51028:2012]</dt>
-		<dd>
-		Bahnanwendungen - Telekomunikationstechnik, Signaltechnik und Datenverarbeitungssysteme -
-		Software für Eisenbahnsteuerungs- und Überwachungssysteme.  Standard, 
-		DIN Deutsches Institut für Normung E.V., March 2012
-		</dd>
-	<dt id="iec61508">[IEC 61508:2010]</dt>
-		<dd>
-		Functional safety of electrical/electronic/programmable electronic safety-related systems.
-		Standard,
-		IEC International Electrotechnical Commission,
-		April 2010.
-		</dd>
-	<dt id="iec62304">[IEC 62304:2015]</dt>
-		<dd>
-		Medical device software - 
-		Software life cycle processes.
-		Standard,
-		IEC/SC 62A Allgemeine Bestimmungen für elektrische Einrichtungen in medizinischer Anwendung,
-		June 2015
-		</dd>
-	<dt id="posix">[IEEE POSIX:2017]</dt>
-		<dd>
-		IEEE Standard for Information Technology -
-		Portable Operating System Interface (POSIX(R)) Base Specifications.
-		Standard,
-		IEEE The Institue of Electrical and Electronic Engineers,
-		January 2017
-		</dd>
-	<dt id="pse5x">[IEEE PSE5x:2003]</dt>
-		<dd>
-		Information Technology -
-		Standardized application environment profile (AEP) -
-		POSIX(R) realtime and embedded application support.
-		Standard,
-		IEEE The Institute of Electrical and Electronic Engineers,
-		January 2003
-		</dd>
-	<dt id="iso26262">[ISO 26262:2018]</dt>
-		<dd>
-		Road Vehicles - Functional safety. 
-		Standard,
-		International Organiszation for Standardization,
-		Geneva, CH, December 2012
-		</dd>
-	<dt id="iso3300x">[ISO 3300x:2015]</dt>
-		<dd>
-		Information Technology. Process Assessment.
-		Standard,
-		ISO/IEC JTC 1/SC 7 Software and Systems Engineering,
-		March 2015
-		</dd>
-	<dt id="iso9001">[ISO 9001:2015]</dt>
-		<dd>
-		Quality management systems - 
-		Requirements (ISO 9001:2015);
-		German and English version
-		EN ISO 9001:2015.
-		Standard,
-		DIN-Normenausschusss Qualitätsmanagement, Statistik und Zertifizierungsgrundlagen (NQSZ),
-		November 2015
-		</dd>
-	<dt id="ul1998">[UL 1998:2018]</dt>
-		<dd>
-		Software in programmable components,
-		Standard,
-		UL llc,
-		September 2018
-		</dd>
-</dl>
+*[DIN 51028:2012]*{: #dinen51208}
+:	**Bahnanwendungen - Telekomunikationstechnik, Signaltechnik und Datenverarbeitungssysteme -
+	Software für Eisenbahnsteuerungs- und Überwachungssysteme**.
+	Standard, 
+	DIN Deutsches Institut für Normung E.V., March 2012
+
+*[IEC 61508:2010]*{: #iec61508}
+:	**Functional safety of electrical/electronic/programmable electronic safety-related systems**.
+	Standard,
+	IEC International Electrotechnical Commission,
+	April 2010.
+
+*[IEC 62304:2015]*{: #iec62304}
+:	**Medical device software - 
+	Software life cycle processes**.
+	Standard,
+	IEC/SC 62A Allgemeine Bestimmungen für elektrische Einrichtungen in medizinischer Anwendung,
+	June 2015
+
+*[IEEE POSIX:2017]*{: #posix}
+:	**IEEE Standard for Information Technology -
+	Portable Operating System Interface (POSIX(R)) Base Specifications**.
+	Standard,
+	IEEE The Institue of Electrical and Electronic Engineers,
+	January 2017
+
+*[IEEE PSE5x:2003]*{: #pse5x}
+:	**Information Technology -
+	Standardized application environment profile (AEP) -
+	POSIX(R) realtime and embedded application support**.
+	Standard,
+	IEEE The Institute of Electrical and Electronic Engineers,
+	January 2003
+
+*[ISO 26262:2018]*{: #iso26262}
+: 	**Road Vehicles - Functional safety**.
+	Standard,
+	International Organiszation for Standardization,
+	Geneva, CH, December 2012
+	
+*[ISO 3300x:2015]*{: #iso3300x}
+:	**Information Technology. Process Assessment**.
+	Standard,
+	ISO/IEC JTC 1/SC 7 Software and Systems Engineering,
+	March 2015
+	
+*[ISO 9001:2015]*{: #iso9001}
+:	**Quality management systems - 
+	Requirements (ISO 9001:2015);
+	German and English version
+	EN ISO 9001:2015**.
+	Standard,
+	DIN-Normenausschusss Qualitätsmanagement, Statistik und Zertifizierungsgrundlagen (NQSZ),
+	November 2015
+	
+*[UL 1998:2018]*{: #ul1998}
+:	**Software in programmable components**.
+	Standard,
+	UL llc,
+	September 2018
 
 # Appendices
 

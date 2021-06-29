@@ -49,8 +49,8 @@ footer	{
 		margin-top: 20px;
 }
 :target	{
-		color: #0f0f0f;
-		background-color: mediumSlateBlue;
+		color: darkSlateBlue;
+		background-color: #cccccc;
 }
 .docTitle {
 		font-weight: bold;
@@ -110,7 +110,7 @@ ol.citation.bracketsAround.lowerRoman > li::marker {
 }
 .todo {
 		color: darkBlue;
-		background-color: #cccccc;
+		background-color: #d0ecf0;
 		font-style: italic;
 }
 .tag-h1 {
