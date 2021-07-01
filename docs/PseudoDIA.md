@@ -74,13 +74,22 @@ This definition includes the following characteristics:
 When we consider a software delivery/release of the Linux kernel, the Linux Kernel Development Community makes the following offer to all its Users.
 Concerning the legally binding offer, the GPL License clearly states (in capital letters):
 
-<blockquote style="normal">
-	<p>NO WARRANTY</p>
- 
-	<p>11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p>
-
-	<p>12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
- </blockquote>
+>NO WARRANTY
+>
+> 11\. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE,
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS
+AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE,
+YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+>
+> 12\. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER,
+OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM
+(INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES
+OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY
+HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+{: style="font-style: normal"}
 
 [quoting Clause 11 & 12 of the GPL 2.0 License][gnu v2.0]
 
@@ -223,7 +232,7 @@ We're talking about an Operating System here - and systems developers would neve
 
 I dug out an old illustration of a bog-standard V-model for embedded systems(enclosed).  It could have been from a textbook i.e. [1]  but it's mostly compatible with the processes envisaged by safety standards. I added the operating system aspects.  I'm neglecting the hardware development process here as well.
 
-<img src="assets/graphics/BogStandardVModel.svg" alt="Bog-Standard V-Model" class="svgImg">
+![Bog-Standard V-Model](/assets/graphics/BogStandardVModel.svg){: .svgImg}
 
 According to the textbook definition, the operating system-related part of the development process starts at the software architecture phase.  The system developer may initially have a set of operating system alternatives to choose from, say an RTOS or Linux or even BSD for all I know.  The basic application functionality and its (logical) requirements on the OS are defined in the architecture phase.  As processing aspects are considered, specific interfaces to the OS are identified at the technical design stage.  Probably at this stage at the latest, the alternatives have been narrowed down to one operating system.  Extraneous OS functionality, such as communication stacks or file systems can be eliminated and options can be chosen which defines a specific OS configuration.  Code may have to be developed to bring the OS up at run-time. 
 
@@ -243,7 +252,7 @@ Again, this holds for all systems, safety-critical or not.  I'll consider safety
 
 For this e-mail, I've enhanced the general V-Model with safety activities / processes.  This means that the diagramme covers the general development lifecycle as well as the safety lifecycle.  The standards are not so clear about that.  Rather than having a separate, parallel V for the safety lifecycle, I've inserted orange "safety" boxes in the nodes representing each development phase.
 
-<img src="assets/graphics/VModelWithSafety.svg" alt="V-Model with Safety" class="svgImg">
+![V-Model with Safety](/assets/graphics/VModelWithSafety.svg){: .svgImg}
 
 In the case of ISO 26262, there is the famous illustration of the 3 Vs superimposed over the overview of the standards series (Figure 1 in every standard) and Figures 2 & 3 in Part 4 which replace the hardware and software Vs with boxes.  The enclosed illustration seems generally compatible.
 
@@ -314,7 +323,7 @@ The first impression I had was that the development community just contributed t
 
 For this e-mail, I've enhanced the safety-critical lifecycle diagramme with 3 corresponding communities (enclosed).  The line of demarcation between the "pure" development community and the user-development community is somewhat arbitrary.  As a first guess,  I've put it above module design.  The upper group might be called "user community", but I think that if they were indeed a community, they band together and get involved in the development.  Per definition, that is not what I intend.
 
-<img src="assets/graphics/Communities.svg" alt="Communities" class="svgImg">
+![Communities](/assets/graphics/Communities.svg){: .svgImg}
 
 In the next e-mail, I'll discuss the implications of this perspective on the work in the group and ELISA's position in the community.
 
@@ -340,14 +349,16 @@ For this e-mail, I've extracted the communities layer from the diagramme and ref
 
 Each of these communities contribute subsystem architectures / designs to the Kernel.  The user-developer / developer split seems to make sense.  That being said, getting intermediate work products, like design documentation for integration testing might be incredibly difficult.
 
-<img src="assets/graphics/LinuxCommunities.svg" alt="Linux Communities" class="svgImg">
+![Linux Communities](/assets/graphics/LinuxCommunities.svg){: .svgImg}
 
 The fundamental problem: the process being used has to be documented and adherence has to be demonstrated.  This is quality stuff not safety stuff.
 
 
 So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all its splendor.  Don't forget to admire it.   It was a great idea.
 
-# References
+# Bibliography
+
+## Links
 
 ### External
 
@@ -403,4 +414,9 @@ So, there we have it.  The last veil has fallen and we see the Pseudo-DIA in all
 1. <https://lists.elisa.tech/g/development-process/message/592>
 {: .citation .bracketsAround .decimal}
 
+## References
+
+None, at the moment.
+
 *[OTS]: Off the shelf
+*[OS]: Operating System
