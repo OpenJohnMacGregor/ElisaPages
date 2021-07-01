@@ -88,7 +88,7 @@ The illustration below presents a functional view on Linux' architecture.
 According to the [ISO/IEEE definition][iee arch], this would be a classic
 software architecture, focusing on the fundamental elements and their relationships.
 
-![Linux Architecture](assets/graphics/LinuxArchitecture.svg){: .svgImg}
+![Linux Architecture](./assets/graphics/LinuxArchitecture.svg){: .svgImg}
 
 All in all, in this representation Linux' functionality hardly differs
 from that of a generic operating system.
