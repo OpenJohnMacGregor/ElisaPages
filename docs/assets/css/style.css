@@ -23,7 +23,7 @@ header	{
 		color: white;
 		text-align: center;
 		padding-top: 20px;
-		margin-left: 250px;
+		margin-left: 270px;
 		margin-bottom: 20px;
 		width: 750px;
 }
@@ -38,11 +38,11 @@ nav		{
 		position: fixed;
 		top: 0px;
 		left: 0px;
-		width:	230px;
+		width:	250px;
 		padding-left: 5px;
 }
 section, footer {
-		margin-left: 250px;
+		margin-left: 270px;
 		width: 750px;
 }
 footer	{
