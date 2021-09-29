@@ -48,7 +48,7 @@ You will be expected to keep your contribution in sync with the project reposito
 
 The diagramme below illustrates the repository topology underlying the terminology.
 
-![Contribution Repositories](/assets/graphics/GitHubContributionRepos.svg){: .svgImg}
+![Contribution Repositories](assets/graphics/GitHubContributionRepos.svg){: .svgImg}
 
 ## Roles
 
