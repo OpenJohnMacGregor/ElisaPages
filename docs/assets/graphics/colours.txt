@@ -1,0 +1,8 @@
+From PlantUML(!) Help
+
+  Hex      Decimal
+#add1b2  173 209 178 - Green
+#e3664a  227 102 74  - Red
+#a9dcdf  169 220 223 - Blue
+#b4a7e5  180 167 229 - Purple
+#eb937f  235 147 127 - Orange
