@@ -40,15 +40,17 @@ All developers must therefore have a GitHub account before starting.
 You must sign the work that you commit.
 By signing your work, you document that you are author of the work 
 and have accepted the license conditions documented in the root directory of **projectRepo**.
+[ Developer Certficate of Origin - elinux.org](https://elinux.org/Developer_Certificate_Of_Origin)
+provides a more detailed explanation.
 
 **NOTE 3:** 
 You will be expected to keep your contribution in sync with the project repository until it has been accepted.
 
 # Terminology
 
-The diagramme below illustrates the repository topology underlying the terminology.
+The diagram below illustrates the repository topology underlying the terminology.
 
-![Contribution Repositories](/assets/graphics/ContributionRepos.svg){: .svgImg}
+![Contribution Repositories](assets/graphics/GitHubContributionRepos.svg){: .svgImg}
 
 ## Roles
 
@@ -86,7 +88,9 @@ On newer repositories, there is a tendency to name it "main".
 # Set up the development environment
 
 You would need write permission to push changes from your **localRepo** directly to the **projectRepo**, which is neither advisable not generally permitted.
-Instead you should use the following procedure:
+GitHub has devised another approach (refer to
+[About collaborative development models - GitHub Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models).
+You should therefore use the following procedure:
 
 ## Create userRepo
 
@@ -96,7 +100,7 @@ Refer to [About Forks - GitHub Docs](https://help.github.com/en/github/collabora
 Note: If you activate the issue tracker in the options of **userRepo**,
 developers who fork your fork (i.e. to collaborate on intermediate versions before submitting a (final) PR to the project)
 will be able to create issues in **userRepo**.
-Otherwise all issues created on your will be forwarded to the **projectRepo** repository instead.
+Otherwise all issues created on **userRepo** will be forwarded to the **projectRepo** repository instead.
 
 ##  Create and set up localRepo
 If you haven't already done so, install git on your machine.
@@ -123,17 +127,43 @@ effectively performs a `git init`{: language-shell .highlight}
 Set your user name and e-mail in your cloned repository.
 Refer to [Set up Git - GitHub Docs](https://help.github.com/en/github/getting-started-with-github/set-up-git) for directions.
 
+We recommend that you set the 
+`git pull`{:.language-shell .highlight} 
+[docu](https://git-scm.com/docs/git-pull)
+command to default to `--ff-only`{:.language-shell .highlight}
+as pull's default behoviour is to merge from the remote repository's master branch into the current branch.
+Refer to [Why you should use git pull -ff-only](https://blog.sffc.xyz/post/185195398930/why-you-should-use-git-pull-ff-only-git-is-a)
+for a detailed explanation of why this behaviour is not desirable.
+Use the `git config`{:.language-shell .highlight} 
+([docu](https://git-scm.com/docs/git-config))
+command to set the default.
+As described in 
+[Set up Git - GitHub Docs](https://help.github.com/en/github/getting-started-with-github/set-up-git),
+this command can set values either for the current repository (default, or with the `--local`{:.language-shell .highlight} option)
+or for all repositories (with the `--global`{:.language-shell .highlight} option.
+The values are stored in a **.git/config** file either at the root of **localRepo**, as mentioned above,
+or in your home directory, respectively.
+The appropriate command to set the default for all repositories would therefore be:
+~~~ shell
+
+$ git config --global pull.ff only
+
+~~~
+
+Instead of using the `git config`{:.language-shell .highlight} command, you can use your favourite text editor
+to enter the corresponding entries directly.
+Refer to the example conf file contents below for all recommended configuration values.
+
 Optionally, set up a procedure to automatically sign commits.  
 The currently recommended way is to use a GPG key.
-Refer to [Signing commits - GitHub Docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits?query=feature+branch).  
+Refer to [Signing commits - GitHub Docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).  
 The traditional method, which is also acceptable, is to sign with your name and e-mail, as set in the git configuration.
 This means, however, that each commit must be called with the --signoff (or -s) argument.
 git has no configuration parameter for automatic sign-off, but you can set an alias for your commit command.
-Using your favourite text editor, you can add the following entry either in the .git/config in your home directory or at the root of **localRepo**
+Again, use the `git config`{:.language-shell .highlight} command:
 ~~~~ conf
 
-[alias]
-  cs = commit --signoff
+$ git config --global alias.cs commit --signoff
 
 ~~~~
 and then substitute cs for the commit command, as in
@@ -160,6 +190,8 @@ Assuming you have used **localRepo/.git/config** for all your configuration, it 
 [branch "main"]
 	remote = origin
 	merge = refs/heads/main
+[pull]
+	ff = only
 
 ~~~
 
@@ -189,6 +221,7 @@ Either create an issue for new work or add an entry to an existing issue.
 The notification should contain:
 * a description of the problem (maybe just the title)
 * a description of the work
+* the name of the branch on which you will be working
 * your name and email
 * your GitHub id, which, naturally, should be there already
 
@@ -199,7 +232,7 @@ Should the local development environment already exist,
 Perform Steps 1 and 2 described in the
 [Periodically sync with projectRepo](#periodically-sync-with-projectrepo){: target="_self"} section below.
 
-## Create a newFeature branch
+## Either create a newFeature branch...
 
 The **master** branches of **userRepo** and **localRepo** should not contain
 changes from the current work.
@@ -208,15 +241,25 @@ have occurred due to accepted pull requests since you originally created the **n
 Refer to the next section for instructions on merging those changes
 into **newFeature**.
 
+First, ensure that the **master** branch is kept up to date.
+You should pull it from **userRepo** using the --ff-only option ([docu](https://git-scm.com/docs/git-pull)).
+~~~ shell
+
+$ git checkout master
+$ git pull origin master --ff-only
+
+~~~
+
 Creating a **newFeature** branch insulates your work from the rest of the project work.
 Refer to 
 [About branches - GitHub](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 for a more detailed explanation.
 
-Although you can create a branch with the `git branch` command
-([docu](https://git-scm.com/docs/git-branch)),
-the `git checkout` command
-([docu](https://git-scm.com/docs/git-checkout))
+Although you can create a branch with the 
+`git branch`{:.language-shell .highlight}
+([docu](https://git-scm.com/docs/git-branch)) command,
+the `git checkout`{:.language-shell .highlight}
+([docu](https://git-scm.com/docs/git-checkout)) command
 can be used to switch to the new branch as well.
 ~~~ shell
 
@@ -227,6 +270,18 @@ The new branch should be placed on **userRepo** and the **localRepo** branch sho
 ~~~ shell
 
 $ git push -u origin newFeature
+
+~~~
+
+## ...or switch to the newFeature branch
+
+Should the **newFeature** branch already exist, you need only switch to it using the
+`git checkout`{:.language-shell .highlight} 
+([docu](https://git-scm.com/docs/git-checkout))
+command.
+~~~ shell
+
+$ git checkout newFeature
 
 ~~~
 
@@ -260,7 +315,7 @@ about how to automate signing off commit.
 
 Include a reference the relevant issue in the commit message.
 Use the hashtag syntax  
-`#<<"issue number">>`{:.language-conf .highlight}
+`#<issue number>`{:.language-conf .highlight}
 ([docu](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#issues-and-pull-requests))
 This will link the commit to the issue and make it visible in the GitHub interface.
 
@@ -269,22 +324,24 @@ for writing the commit message.
 
 ### Back up your work on userRepo
 
-Use the `git push`{:.language-shell .highlight} command ([docu](https://git-scm.com/docs/git-push))
+Use the `git push`{:.language-shell .highlight} ([docu](https://git-scm.com/docs/git-push)) command 
 to update your remote repository.
 
-John: Should this be git push origin newFeature
-{: .comment}
 ~~~ shell
 
 $ git push origin
 
 ~~~
 
+You can also configure **newFeature** to be the default to be pushed to by using:
+* `git push -u origin newFeature`{:.language-shell .highlight} when you first push it, or
+* `git branch --set-upstream newFeature origin/newFeature`{:.language-shell .highlight} if you forget
+
 ### Periodically sync with projectRepo
 
-As necessary, import the changes from **projectRepo** that have been merged since the last fork.
+As necessary, import the changes from **projectRepo** that have been merged since the last fork sync.
 These changes are located on the **master** branch.
-This is a three step process as follows.
+This is a two step process as follows.
 
 #### 1) Update userRepo from projectRepo
 
@@ -295,49 +352,50 @@ Refer to
 
 #### 2) Update localRepo from userRepo
 
-To bring the **master** branch updates into your local development environment,
-you must first switch to the **master** branch and then bring in the changes from **userRepo**.
-Use the `git checkout`[:.language-shell .highlight} ([docu](https://git-scm.com/docs/git-checkout))
-and `git pull` ([docu](https://git-scm.com/docs/git-pull))
-commands:
-~~~ shell
-
-$ git checkout master
-$ git pull origin
-
-~~~
-
-The **master** branch in **localRepo** is now synchronised with the **master** branch in **projectRepo**,
-but the changes must now be merged into the **newFeature** branch in **localRepo**.
-
-#### 3) Merge the changes in projectRepo into your local work
-
-Other than the content that you have changed, the content **newFeature** branch
-is at the base state.
+Other than the content that you have changed, the content ot the **newFeature** branch
+is at the **base** state.
 That is, the state it was in as the branch was created
-or in the state from the last merge.
-This merge updates the base state to the current state of **master**
-(which would then be synchronised with **projectRepo**).
+or in the state from the last merge from **userRepo/master**.
 
-Switch back to the **newFeature** branch and pull the changes over from
-the **master** branch using the  
-`git rebase`{:.language-shell .highlight} command
-([docu](https://git-scm.com/docs/git-rebase))
+To bring updates of all branches in **userRepo** into your local development environment,
+use the  
+`git fetch`{:.language-shell .highlight}
+([docu](https://git-scm.com/docs/git-fetch))
+command.
 ~~~ shell
 
-$ git checkout newFeature
-$ git rebase master
+$ git fetch origin
 
 ~~~
 
-In case of conflicts, rebase will interrupt the process and give you a chance to resolve the conflict.
+The fetched changes must still be explicitly merged into the **newFeature** branch, however.
+Since **projectMaster** contains changes that are not contained in **newFeature**,
+the merge will update the base state of the branch.
+Use the
+`git rebase`{:.language-shell .highlight}
+([docu](https://git-scm.com/docs/git-rebase))
+command to merge.
+~~~ shell
+
+git rebase origin/master
+
+~~~
+
+Should conflicts occur, rebase will interrupt the process and give you a chance to resolve the conflict.
 After the conflict has been resolved, the merge process can resume.
 Refer to the [rebase documentation](https://git-scm.com/docs/git-rebase)
 for a detailed description of the process and necessary commands.
 
 Now the **newFeature** branch is based on the most recent **master** branch and
-can be merged without back into the **master** branch without conflicts.
-Note that pushing the **newFeature** branch to **userRepo** will now require
+can be merged back into the **master** branch (of **userRepo** and **projectRepo**) without conflicts.
+
+**Note 1** This workflow means that the local version of **master** in **localRepo**
+is **not** updated, but it does have the benefit that the merge operation
+does not involve checking out **master** to update it and then merging
+**master** into **newFeature**.
+This lessens the danger of commiting **it** instead of **newFeature**.
+
+**Note 2** Pushing the **newFeature** branch to **userRepo** will now require
 the -force switch since rebasing will change the commit history in **localRepo**.
 Use
 ~~~ shell
@@ -345,7 +403,6 @@ Use
 $ git push origin -force
 
 ~~~
-
 
 
 ## Prepare for submission
@@ -378,19 +435,20 @@ and the last commit (which is at the HEAD),
 use the following command:
 ~~~ shell
 
-$ git rebase HEAD-10 --signoff
+$ git rebase HEAD~10 --signoff
 
 ~~~
 
 Note that since this changes the history of **localRepo**, 
 pushing it to **userRepo** will overwrite the changelog and 
-thus require using the --force flag!
+thus requires using the --force flag!
 
 ### Sync with projectRepo
 
-The rest of the content of **newFeature** should be at the same state as the current version on **projectRepo**.
+The rest of the content of **newFeature** should brought up to the same state as the current version on **projectRepo**, 
+if it isn't already.
 
-This is explained in  the [Periodically sync with projectRepo](#periodically-sync-with-projectrepo){: target="_self"} section above.
+How to do this is explained in  the [Periodically sync with projectRepo](#periodically-sync-with-projectrepo){: target="_self"} section above.
 
 ### Push your work to userRepo
 
